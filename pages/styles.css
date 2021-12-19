@@ -1,0 +1,13 @@
+/* FONTS */
+@font-face {
+  font-family: gotham-rounded;
+  src: url(/fonts/gotham_rounded/GothamRounded-Book.otf);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: blanchedalmond;
+  font-family: 'gotham-rounded';
+}
