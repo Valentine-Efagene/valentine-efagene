@@ -7,6 +7,7 @@ import styles from './index.module.css'
 import { Canvas } from '@react-three/fiber'
 import Box from '../components/Box/Box'
 import AnimatedSphere from '../components/AnimatedSphere/AnimatedSphere'
+import Hp from '../components/Hp/Hp'
 import { OrbitControls } from '@react-three/drei'
 
 export default function Home() {
@@ -41,13 +42,23 @@ export default function Home() {
           </Suspense>
         </Canvas>
       </div>
-      <div className={styles.sphereCanvasContainer}>
+      <div className={styles.blobCanvasContainer}>
         <Canvas className={styles.canvas}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
           <Suspense fallback={null}>
             <AnimatedSphere />
+          </Suspense>
+        </Canvas>
+      </div>
+      <div className={styles.hpCanvasContainer}>
+        <Canvas className={styles.canvas}>
+          <OrbitControls enableZoom={false} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2, 5, 2]} intensity={1} />
+          <Suspense fallback={null}>
+            <Hp />
           </Suspense>
         </Canvas>
       </div>

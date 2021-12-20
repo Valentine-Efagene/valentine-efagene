@@ -8,13 +8,16 @@
 /* Controls the dimentions of the canvas */
 .boxCanvasContainer {
   height: 500px;
-  background-color: tomato;
 }
 
 /* Controls the dimentions of the canvas */
-.sphereCanvasContainer {
+.blobCanvasContainer {
   height: 500px;
-  background-color: turquoise;
+}
+
+/* Controls the dimentions of the canvas */
+.hpCanvasContainer {
+  height: 500px;
 }
 
 .canvas {
