@@ -1,6 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react'
 import styles from './NavMenu.module.css'
 import NavMenuItem from '../NavMenuItem/NavMenuItem'
+import Link from 'next/link'
+import ComputerIcon from '@mui/icons-material/Computer'
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 
 export default function NavMenu() {
   const menuRef = useRef()
@@ -8,7 +11,7 @@ export default function NavMenu() {
   const [menuBtnVisible, setMenuBtnVisible] = useState(true)
   const [menuItemsVisible, setMenuItemsVisible] = useState()
 
-  const initUI = async () => {
+  const initUI = () => {
     const menu = menuRef.current
 
     document.body.onscroll = () => {
@@ -68,11 +71,20 @@ export default function NavMenu() {
       )}
       {menuItemsVisible && (
         <div className={styles.menuItems}>
-          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>
+            <Link href="/desktop/desktop">
+              <a className={styles.navLink}>
+                <ComputerIcon /> Desktop Projects
+              </a>
+            </Link>
+          </NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>
+            <Link href="/mobile/mobile">
+              <a className={styles.navLink}>
+                <PhoneIphoneIcon /> Mobile Projects
+              </a>
+            </Link>
+          </NavMenuItem>
         </div>
       )}
       <section></section>
