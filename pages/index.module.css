@@ -1,10 +1,23 @@
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.main {
+/* Controls the dimentions of the canvas */
+.boxCanvasContainer {
+  height: 500px;
+  background-color: tomato;
+}
+
+/* Controls the dimentions of the canvas */
+.sphereCanvasContainer {
+  height: 500px;
+  background-color: turquoise;
+}
+
+.canvas {
+  height: 100%;
   width: 100%;
-  height: 1000px;
-  /* background: rgba(148, 102, 41, 0.405); */
 }

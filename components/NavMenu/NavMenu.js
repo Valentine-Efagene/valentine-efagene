@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import styles from './NavMenu.module.css'
-import Image from 'next/image'
-import MenuIcon from '@mui/icons-material/Menu'
+import NavMenuItem from '../NavMenuItem/NavMenuItem'
 
 export default function NavMenu() {
   const menuRef = useRef()
@@ -17,20 +16,21 @@ export default function NavMenu() {
       setMenuBtnVisible(true)
 
       if (!menu.classList.contains(styles.navButton)) {
-        //menu.style.top = `${10}px`
-        //menu.style.right = `${10}px`
-        //menu.style.borderWidth = `${3}px`
-        //setTimeout(() => {
         menu.classList.remove(styles.navMenu)
         menu.classList.add(styles.navButton)
-        //}, 100)
       }
     }
+
+    document.addEventListener('mousedown', closeMenu)
+    document.addEventListener('touchstart', closeMenu)
   }
 
   useEffect(() => {
     initUI()
-    return () => {}
+    return () => {
+      document.removeEventListener('mousedown', closeMenu)
+      document.removeEventListener('touchstart', closeMenu)
+    }
   }, [])
 
   const openMenu = () => {
@@ -41,12 +41,26 @@ export default function NavMenu() {
     setMenuItemsVisible(true)
   }
 
+  const closeMenu = (event) => {
+    const menu = menuRef.current
+
+    if (!menuRef || menu.contains(event.target)) {
+      return
+    }
+
+    menu.classList.add(styles.navButton)
+    menu.classList.remove(styles.navMenu)
+    setMenuBtnVisible(true)
+    setMenuItemsVisible(false)
+  }
+
   return (
     <div ref={menuRef} className={`${styles.navButton}`}>
       {menuBtnVisible && (
         <button
           ref={buttonRef}
           onClick={openMenu}
+          onBlur={closeMenu}
           className={styles.menuToggle}
         >
           <img src="/menu-icon.svg" className={styles.menuIcon} />
@@ -54,12 +68,11 @@ export default function NavMenu() {
       )}
       {menuItemsVisible && (
         <div className={styles.menuItems}>
-          <span className={styles.menuItem}>Hello</span>
-          <span className={styles.menuItem}>Hello</span>
-          <span className={styles.menuItem}>Hello</span>
-          <span className={styles.menuItem}>Hello</span>
-          <span className={styles.menuItem}>Hello</span>
-          <span className={styles.menuItem}>Hello</span>
+          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>Hello</NavMenuItem>
         </div>
       )}
       <section></section>
