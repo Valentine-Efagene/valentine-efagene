@@ -17,10 +17,23 @@
 
 /* Controls the dimentions of the canvas */
 .hpCanvasContainer {
-  height: 500px;
+  height: 400px;
+  margin-top: -100px;
 }
 
 .canvas {
   height: 100%;
   width: 100%;
+}
+
+.welcomeMessage {
+  font-size: 2em;
+  font-weight: 700;
+  white-space: nowrap;
+  margin: auto;
+}
+
+.about {
+  margin: 10px;
+  text-align: center;
 }
