@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Footer from '../components/footer/footer'
+import Footer from '../components/Footer/Footer'
 import NavMenu from '../components/NavMenu/NavMenu'
 import styles from './index.module.css'
 import { Canvas } from '@react-three/fiber'
@@ -38,7 +38,11 @@ export default function Home() {
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
           <Suspense fallback={null}>
-            <Box />
+            <Box
+              onClick={() => {
+                alert('clicked')
+              }}
+            />
           </Suspense>
         </Canvas>
       </div>

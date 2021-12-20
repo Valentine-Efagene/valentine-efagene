@@ -4,6 +4,7 @@ import NavMenuItem from '../NavMenuItem/NavMenuItem'
 import Link from 'next/link'
 import ComputerIcon from '@mui/icons-material/Computer'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
+import SchoolIcon from '@mui/icons-material/School'
 
 export default function NavMenu() {
   const menuRef = useRef()
@@ -82,6 +83,13 @@ export default function NavMenu() {
             <Link href="/mobile/mobile">
               <a className={styles.navLink}>
                 <PhoneIphoneIcon /> Mobile Projects
+              </a>
+            </Link>
+          </NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>
+            <Link href="/education/education">
+              <a className={styles.navLink}>
+                <SchoolIcon /> Education
               </a>
             </Link>
           </NavMenuItem>

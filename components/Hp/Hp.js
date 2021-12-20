@@ -16,7 +16,7 @@ export default function Model({ ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group scale={0.05}>
+        <group scale={props.scale}>
           <group rotation={[Math.PI / 2, 0, 0]}>
             <group
               name="display"
