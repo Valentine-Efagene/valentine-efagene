@@ -5,6 +5,8 @@ import Link from 'next/link'
 import ComputerIcon from '@mui/icons-material/Computer'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import SchoolIcon from '@mui/icons-material/School'
+import MyLocationIcon from '@mui/icons-material/MyLocation'
+import HomeIcon from '@mui/icons-material/Home'
 
 export default function NavMenu() {
   const menuRef = useRef()
@@ -73,6 +75,13 @@ export default function NavMenu() {
       {menuItemsVisible && (
         <div className={styles.menuItems}>
           <NavMenuItem className={styles.menuItem}>
+            <Link href="/">
+              <a className={styles.navLink}>
+                <HomeIcon /> Home
+              </a>
+            </Link>
+          </NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>
             <Link href="/desktop/desktop">
               <a className={styles.navLink}>
                 <ComputerIcon /> Desktop Projects
@@ -90,6 +99,13 @@ export default function NavMenu() {
             <Link href="/education/education">
               <a className={styles.navLink}>
                 <SchoolIcon /> Education
+              </a>
+            </Link>
+          </NavMenuItem>
+          <NavMenuItem className={styles.menuItem}>
+            <Link href="/location/location">
+              <a className={styles.navLink}>
+                <MyLocationIcon /> Location
               </a>
             </Link>
           </NavMenuItem>

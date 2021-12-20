@@ -15,8 +15,8 @@ export default function Model({ ...props }) {
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group scale={props.scale}>
+      <group scale={props.scale} rotation={[5.5, 0, 0]}>
+        <group>
           <group rotation={[Math.PI / 2, 0, 0]}>
             <group
               name="display"

@@ -14,7 +14,7 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF('/graduation.gltf')
   return (
     <group scale={0.1} ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
+      <group rotation={[-1.1, -0.1, 2]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group
             position={[0, 1.17, 0]}

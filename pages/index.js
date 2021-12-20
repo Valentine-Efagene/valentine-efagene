@@ -24,15 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavMenu />
-
-      {/* <h1 className="title">
-          Read{' '}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
-        </h1> */}
-      {/* <MyApp Component={NavMenu} /> */}
-      <div className={styles.boxCanvasContainer}>
+      {/* <div className={styles.boxCanvasContainer}>
         <Canvas className={styles.canvas}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
@@ -55,14 +47,14 @@ export default function Home() {
             <AnimatedSphere />
           </Suspense>
         </Canvas>
-      </div>
+      </div> */}
       <div className={styles.hpCanvasContainer}>
         <Canvas className={styles.canvas}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
           <Suspense fallback={null}>
-            <Hp />
+            <Hp scale={0.25} />
           </Suspense>
         </Canvas>
       </div>
