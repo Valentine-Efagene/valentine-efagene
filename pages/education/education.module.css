@@ -54,7 +54,7 @@
   /* background-color: cadetblue; */
 }
 
-.flex:nth-child(even) {
+.card:nth-child(even) .flex {
   flex-direction: row-reverse;
 }
 
