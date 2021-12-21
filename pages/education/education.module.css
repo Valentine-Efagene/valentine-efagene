@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #66bbc6;
+  background-color: palevioletred;
   width: 100%;
   height: 100%;
 }
@@ -17,7 +17,8 @@
 
 .roboticsCanvasContainer {
   width: 200px;
-  height: 300px;
+  height: 200px;
+  /* background-color: brown; */
   margin: auto;
 }
 
@@ -32,7 +33,7 @@
   color: white;
   margin: auto;
   padding: 30px;
-  height: 60%;
+  height: 50%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -40,10 +41,42 @@
 .card {
   scroll-snap-align: start;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 10px auto;
+  /* background-color: blanchedalmond; */
 }
 
-.card:nth-child(even) {
+.cardNote {
+  height: fit-content;
+  /* background-color: cadetblue; */
+}
+
+.flex:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 740px) {
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.down {
+  margin: auto;
+  transition-duration: 1s;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.261);
+}
+
+.down:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
 }
