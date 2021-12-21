@@ -8,9 +8,24 @@ title: HP ProBook
 
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function Model({ ...props }) {
   const group = useRef()
+
+  let vy = 0.001
+  const absoluteLimit = 0.6
+
+  useFrame((state, delta) => {
+    group.current.rotation.y += vy
+    if (
+      group.current.rotation.y > absoluteLimit ||
+      group.current.rotation.y < -absoluteLimit
+    ) {
+      vy *= -1
+    }
+  })
+
   const { nodes, materials, animations } = useGLTF('/hp.gltf')
   const { actions } = useAnimations(animations, group)
   return (

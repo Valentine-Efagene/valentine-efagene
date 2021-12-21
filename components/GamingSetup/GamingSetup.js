@@ -6,15 +6,40 @@ source: https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11a
 title: Gaming Desktop PC
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useRef, useEffect } from 'react'
+import { useGLTF, TransformControls, StandardEffects } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function Model({ ...props }) {
   const group = useRef()
+
+  /*let vy = 0.001
+  const absoluteLimit = 0.6
+  useFrame((state, delta) => {
+    group.current.rotation.y += vy
+    if (
+      group.current.rotation.y > absoluteLimit ||
+      group.current.rotation.y < -absoluteLimit
+    ) {
+      vy *= -1
+    }
+  })*/
+
+  useEffect(() => {
+    group.current.addEventListener('drag', () => {
+      console.log('Dragging')
+      group.current.rotation.y += 0.01
+    })
+    return () => {}
+  }, [])
+
   const { nodes, materials } = useGLTF('/gaming_setup.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <group scale={props.scale} rotation={[-Math.PI / 2, 0, 0]}>
+      <group
+        scale={props.scale || 1.15}
+        rotation={props.rotation || [-Math.PI / 2, 0, 0]}
+      >
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
           <group
             position={[-34.3, -53.98, 208.28]}

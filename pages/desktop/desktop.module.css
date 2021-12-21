@@ -1,13 +1,25 @@
 .desktopMain {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  background-color: #66bbc6;
 }
 
 .canvasContainer {
+  transition: 0.5s;
+  position: absolute;
   width: 100%;
-  height: 500px;
+  height: 600px;
+}
+
+.content {
+  z-index: 1;
+  color: white;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.282);
 }

@@ -5,6 +5,11 @@ import { Canvas } from '@react-three/fiber'
 import styles from './education.module.css'
 import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
+import WeldingArm from '../../components/WeldingArm/WeldingArm'
+import Box from '../../components/Box/Box'
+import ArduinoUno from '../../components/ArduinoUno/ArduinoUno'
+import RoboticArmDuckish from '../../components/RoboticArmDuckish/RoboticArmDuckish'
+import THREE from 'three'
 
 export default function Education() {
   return (
@@ -21,21 +26,69 @@ export default function Education() {
         </Canvas>
       </div>
       <div className={styles.content}>
-        Eu elit nostrud anim laboris sint occaecat nostrud pariatur esse
-        exercitation aute et tempor. Commodo consectetur aute ea commodo
-        excepteur. Ad duis ut nisi quis commodo incididunt sunt nisi. Cupidatat
-        aliquip laboris officia qui mollit enim voluptate sint. Esse culpa
-        laborum exercitation occaecat veniam veniam. Non ad irure est
-        consectetur deserunt voluptate fugiat minim reprehenderit irure nulla
-        laboris do occaecat. Mollit esse nostrud labore sint proident irure
-        eiusmod aliquip laborum et consectetur veniam excepteur adipisicing.
-        Sint culpa sint mollit id. Cillum anim laborum sint cillum consectetur
-        veniam. Veniam consectetur duis commodo ipsum duis mollit. Lorem fugiat
-        sint fugiat aute nulla nulla quis irure. Dolore incididunt ea cupidatat
-        laboris commodo eiusmod irure nulla veniam consequat occaecat enim
-        commodo. Consectetur ullamco exercitation nostrud pariatur consequat est
-        dolore officia minim dolor occaecat ut nisi. Est tempor ut amet tempor
-        sint culpa qui enim fugiat eu ut magna consequat.
+        <div className={styles.card}>
+          <h2>Notable Areas Studied</h2>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.roboticsCanvasContainer}>
+            <Canvas className={styles.canvas}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={0.5} />
+              <axisHelper />
+              <directionalLight position={[-2, 5, 2]} intensity={1} />
+              <Suspense fallback={null}>
+                <RoboticArmDuckish
+                  //position={[]}
+                  scale={0.03}
+                  onClick={(event) => {
+                    console.log(event)
+                  }}
+                />
+              </Suspense>
+            </Canvas>
+          </div>
+          <div className={styles.cardNote}>
+            <span>Robotics and control systems engineering</span>
+            <br />
+            <p>
+              Veniam nostrud est et reprehenderit esse proident veniam cupidatat
+              ea sint deserunt elit consequat aliquip. Velit sint enim do culpa
+              deserunt consequat incididunt cillum in qui et ullamco velit.
+              Nulla id anim culpa est laborum et sint sit enim aliquip proident
+              sunt cupidatat sint.
+            </p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.roboticsCanvasContainer}>
+            <Canvas className={styles.canvas}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={0.5} />
+              <axisHelper />
+              <directionalLight position={[-2, 5, 2]} intensity={1} />
+              <Suspense fallback={null}>
+                <RoboticArmDuckish
+                  //position={[]}
+                  scale={0.03}
+                  onClick={(event) => {
+                    console.log(event)
+                  }}
+                />
+              </Suspense>
+            </Canvas>
+          </div>
+          <div className={styles.cardNote}>
+            <span>Robotics and control systems engineering</span>
+            <br />
+            <p>
+              Veniam nostrud est et reprehenderit esse proident veniam cupidatat
+              ea sint deserunt elit consequat aliquip. Velit sint enim do culpa
+              deserunt consequat incididunt cillum in qui et ullamco velit.
+              Nulla id anim culpa est laborum et sint sit enim aliquip proident
+              sunt cupidatat sint.
+            </p>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

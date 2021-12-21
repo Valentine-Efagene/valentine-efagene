@@ -8,12 +8,31 @@ html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background: blanchedalmond;
+  /* background: blanchedalmond; */
   font-family: 'gotham-rounded';
   padding: 0%;
 }
 
 body {
   padding: 0%;
-  margin: 10px;
+  margin: 0;
+}
+
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.391) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.433); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* border: 3px solid orange; */
 }

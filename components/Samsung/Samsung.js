@@ -8,10 +8,18 @@ title: Samsung S21 Ultra
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function Model({ ...props }) {
   const group = useRef()
+  let vy = 0.005
+
+  useFrame((state, delta) => {
+    group.current.rotation.y += vy
+  })
+
   const { nodes, materials } = useGLTF('/samsung.gltf')
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group scale={props.scale} rotation={[-Math.PI / 2, 0, 0]}>

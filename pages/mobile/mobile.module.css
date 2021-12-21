@@ -1,4 +1,5 @@
 .mobileMain {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +9,15 @@
 }
 
 .canvasContainer {
+  position: absolute;
   height: 500px;
   width: 100%;
+}
+
+.content {
+  z-index: 1;
+  color: white;
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.282);
 }

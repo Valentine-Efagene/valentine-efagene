@@ -1,9 +1,9 @@
 import React from 'react'
 import { Sphere, MeshDistortMaterial } from '@react-three/drei'
 
-export default function AnimatedSphere() {
+export default function AnimatedSphere(props) {
   return (
-    <Sphere visible args={[1, 100, 200]} scale={2}>
+    <Sphere visible args={[1, 100, 200]} {...props}>
       <MeshDistortMaterial
         color="#8352fd"
         attach="material"
