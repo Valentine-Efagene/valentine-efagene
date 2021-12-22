@@ -4,6 +4,8 @@
   left: 0;
   width: 100%;
   height: fit-content;
+  display: flex;
+  flex-direction: row;
   margin: 40px;
   justify-content: space-around;
   align-items: center;
@@ -14,23 +16,17 @@
 .menuItem {
   color: white;
   cursor: pointer;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   padding: 10px 30px;
   border-radius: 10px;
   flex-grow: 1;
 }
 
-.navLink {
-  text-decoration: none;
-  color: white;
-}
-
-.navLink:hover {
-  transform: scale(1.5);
-  color: aqua;
-}
-
 .menuItem:active {
+  background-color: white;
+  color: #101420;
+}
+.menuItem.current {
   background-color: white;
   color: #101420;
 }

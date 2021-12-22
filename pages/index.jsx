@@ -19,6 +19,8 @@ import Graduation from '../components/Graduation/Graduation'
 import WideNavMenu from '../components/WideNavMenu/WideNavMenu'
 import CardsButton from '../components/CardsButton/CardsButton'
 import FacebookIcon from '@mui/icons-material/Facebook'
+import GlowingHeadphones from '../components/GlowingHeadphones/GlowingHeadphones'
+import Logo from '../components/Logo/Logo'
 
 export default function Home() {
   const [gradScale, setGradScale] = useState(0.1)
@@ -63,14 +65,43 @@ export default function Home() {
             {/* <axisHelper /> */}
             <Suspense fallback={null}>
               <WhiteLaptop
-                scale={0.04}
+                scale={0.05}
                 rotation={[0.5, -2, 0.0]}
-                position={[-3.3, -0.7, -8.5]}
+                position={[-4.2, -0.9, -10.5]}
               />
             </Suspense>
           </Canvas>
         </div>
-        <Wave className={styles.wave} />
+        <div className={styles.canvasContainer2}>
+          <Canvas className={styles.canvas}>
+            <OrbitControls
+              enableZoom={false}
+              enablePan={false}
+              //enableRotate={false}
+            />
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[-2, 5, 2]} intensity={1} />
+            {/* <axisHelper /> */}
+            <Suspense fallback={null}>
+              <GlowingHeadphones
+                scale={0.8}
+                rotation={[0, 1, 0]}
+                position={[0, 0, 0]}
+              />
+            </Suspense>
+          </Canvas>
+        </div>
+        <Wave
+          className={styles.wave}
+          fill="white"
+          paused={false}
+          options={{
+            height: 100,
+            amplitude: 40,
+            speed: 0.15,
+            points: 3,
+          }}
+        />
       </div>
     </div>
   )

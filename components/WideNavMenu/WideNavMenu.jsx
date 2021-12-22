@@ -1,36 +1,20 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './WideNavMenu.module.css'
-import HomeIcon from '@mui/icons-material/Home'
+import ActiveLink from '../ActiveLink/ActiveLink'
 
 export default function WideNavMenu() {
+  useEffect(() => {
+    return () => {}
+  }, [])
+
   return (
     <div className={styles.menu}>
-      <span className={styles.menuItem}>
-        <Link href="/">
-          <a className={styles.navLink}>Home</a>
-        </Link>
-      </span>
-      <span className={styles.menuItem}>
-        <Link href="/">
-          <a className={styles.navLink}>Home</a>
-        </Link>
-      </span>
-      <span className={styles.menuItem}>
-        <Link href="/">
-          <a className={styles.navLink}>Home</a>
-        </Link>
-      </span>
-      <span className={styles.menuItem}>
-        <Link href="/">
-          <a className={styles.navLink}>Home</a>
-        </Link>
-      </span>
-      <span className={styles.menuItem}>
-        <Link href="/education/education">
-          <a className={styles.navLink}>Education</a>
-        </Link>
-      </span>
+      <ActiveLink href="/">Home</ActiveLink>
+      <ActiveLink href="desktop/desktop">Desktop</ActiveLink>
+      <ActiveLink href="/mobile/mobile">Mobile</ActiveLink>
+      <ActiveLink href="/education/education">Education</ActiveLink>
+      <ActiveLink href="/location/location"></ActiveLink>
     </div>
   )
 }

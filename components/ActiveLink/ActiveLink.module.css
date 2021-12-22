@@ -1,0 +1,19 @@
+.navLink {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  margin: auto 20px;
+  transition: 0.5s;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.navLink:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+.activeLink {
+  background: white;
+  color: black;
+}

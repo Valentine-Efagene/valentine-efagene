@@ -57,7 +57,9 @@
 
 .starter {
   color: white;
+  margin-left: 20px;
   width: 40%;
+  z-index: 2;
 }
 
 .large {
@@ -73,15 +75,27 @@
 
 /* Controls the dimentions of the canvas */
 .canvasContainer {
-  width: 50%;
-  height: 100%;
+  position: relative;
+  right: 200px;
+  width: 500px;
+  height: 500px;
+}
+
+.canvasContainer2 {
+  position: absolute;
+  left: 450px;
+  bottom: -50px;
+  width: 250px;
+  height: 500px;
+  z-index: 1;
 }
 
 .wave {
   z-index: 100;
   width: 100%;
+  overflow: hidden;
   position: absolute;
-  bottom: -100px;
+  bottom: -10px;
 }
 
 .canvas {
