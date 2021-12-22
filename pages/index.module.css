@@ -9,6 +9,7 @@
   /* background: #1c0531; */
   background: orange;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .landing {
@@ -16,7 +17,7 @@
   flex-direction: row;
   margin: auto;
   height: 100%;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -78,8 +79,9 @@
 
 .wave {
   z-index: 100;
+  width: 100%;
   position: absolute;
-  bottom: -10px;
+  bottom: -100px;
 }
 
 .canvas {

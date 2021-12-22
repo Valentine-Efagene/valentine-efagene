@@ -62,12 +62,6 @@ export default function Home() {
             <directionalLight position={[-2, 5, 2]} intensity={1} />
             {/* <axisHelper /> */}
             <Suspense fallback={null}>
-              {/* <Hp scale={0.25} rotation={[0, 0, 0.0]} position={[0, -1, 0]} /> */}
-              {/* <Laptop
-                scale={0.0013}
-                rotation={[0.5, -2, 0.0]}
-                position={[0, -1, 0]}
-              /> */}
               <WhiteLaptop
                 scale={0.04}
                 rotation={[0.5, -2, 0.0]}
@@ -76,6 +70,7 @@ export default function Home() {
             </Suspense>
           </Canvas>
         </div>
+        <Wave className={styles.wave} />
       </div>
     </div>
   )
