@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import styles from './education.module.css'
 import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
+import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import WeldingArm from '../../components/WeldingArm/WeldingArm'
 import Box from '../../components/Box/Box'
 import ArduinoUno from '../../components/ArduinoUno/ArduinoUno'
@@ -14,6 +15,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 export default function Education() {
   return (
     <div className={styles.educationMain}>
+      <WideNavMenu />
       <NavMenu />
       <div className={styles.canvasContainer}>
         <Canvas className={styles.canvas}>

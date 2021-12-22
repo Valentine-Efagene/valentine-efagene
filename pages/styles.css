@@ -3,13 +3,25 @@
   font-family: gotham-rounded;
   src: url(/fonts/gotham_rounded/GothamRounded-Book.otf);
 }
+@font-face {
+  font-family: JuliusSansOne-Regular;
+  src: url(/fonts/JuliusSansOne-Regular/JuliusSansOne-Regular.ttf);
+}
+@font-face {
+  font-family: ArchivoNarrow-Regular;
+  src: url(/fonts/Archivo_Narrow/static/ArchivoNarrow-Regular.ttf);
+}
+@font-face {
+  font-family: ArchivoBlack-Regular;
+  src: url(/fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
 
 html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   /* background: blanchedalmond; */
-  font-family: 'gotham-rounded';
+  font-family: gotham-rounded;
   padding: 0%;
 }
 

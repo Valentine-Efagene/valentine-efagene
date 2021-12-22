@@ -4,15 +4,75 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #66bbc6;
+  /* background-color: #101420; */
+  /* background: rgb(30, 68, 65); */
+  /* background: #1c0531; */
+  background: orange;
+  overflow-x: hidden;
+}
 
-  overflow: hidden;
+.landing {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 100%;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 740px) {
+  .landing {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .starter {
+    position: absolute;
+    top: 300px;
+    width: 80% !important;
+    z-index: 1;
+    margin: auto;
+  }
+
+  .canvasContainer {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+  }
+
+  .large {
+    font-family: JuliusSansOne-Regular;
+    font-size: 2px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+}
+
+.starter {
+  color: white;
+  width: 40%;
+}
+
+.large {
+  font-family: JuliusSansOne-Regular;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.small {
+  font-family: gotham-rounded;
 }
 
 /* Controls the dimentions of the canvas */
 .canvasContainer {
-  position: fixed;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
