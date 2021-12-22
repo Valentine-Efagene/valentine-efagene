@@ -34,7 +34,7 @@
   .starter {
     position: absolute;
     top: 300px;
-    width: 80% !important;
+    width: 70% !important;
     z-index: 1;
     margin: auto;
   }
@@ -45,6 +45,11 @@
     width: 100%;
     height: 500px;
     margin: auto;
+  }
+
+  .canvasContainer2 {
+    position: absolute;
+    bottom: -120px !important;
   }
 
   .large {
@@ -91,7 +96,7 @@
 }
 
 .wave {
-  z-index: 100;
+  z-index: 0;
   width: 100%;
   overflow: hidden;
   position: absolute;
