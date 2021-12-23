@@ -1,0 +1,82 @@
+.educationMain {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  width: 100%;
+  height: 100%;
+}
+
+.canvasContainer {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.roboticsCanvasContainer {
+  width: 200px;
+  height: 200px;
+  /* background-color: brown; */
+  margin: auto;
+}
+
+.subtitle {
+  margin: auto;
+}
+
+.content {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  z-index: 1;
+  color: white;
+  margin: auto;
+  padding: 30px;
+  height: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+  margin: 10px auto;
+  /* background-color: blanchedalmond; */
+}
+
+.cardNote {
+  height: fit-content;
+  /* background-color: cadetblue; */
+}
+
+.card:nth-child(even) .flex {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 740px) {
+  .card {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.down {
+  margin: auto;
+  transition-duration: 1s;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.261);
+}
+
+.down:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}

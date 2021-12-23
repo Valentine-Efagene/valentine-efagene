@@ -20,6 +20,8 @@ export default function Model({ ...props }) {
   const buffer = 0.2
 
   useFrame((state, delta) => {
+    if (!props.move) return
+
     group.current.rotation.y += ry
     group.current.position.y += vy * (reverse ? -1 : 1)
     console.log(group.current.position.y)

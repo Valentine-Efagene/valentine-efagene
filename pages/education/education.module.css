@@ -1,82 +1,75 @@
 .educationMain {
   position: fixed;
   display: flex;
+  z-index: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: palevioletred;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
 }
 
 .canvasContainer {
   position: absolute;
-  width: 100%;
-  height: 50%;
-}
-
-.roboticsCanvasContainer {
-  width: 200px;
-  height: 200px;
-  /* background-color: brown; */
-  margin: auto;
-}
-
-.subtitle {
-  margin: auto;
+  top: 10px;
+  width: 400px;
+  height: 400px;
 }
 
 .content {
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  z-index: 1;
-  color: white;
-  margin: auto;
-  padding: 30px;
-  height: 50%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.card {
-  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
-  height: 50%;
-  margin: 10px auto;
-  /* background-color: blanchedalmond; */
 }
 
-.cardNote {
-  height: fit-content;
-  /* background-color: cadetblue; */
-}
-
-.card:nth-child(even) .flex {
-  flex-direction: row-reverse;
-}
-
-@media (max-width: 740px) {
-  .card {
-    width: 100%;
-    margin: 10px;
-  }
-}
-
-.down {
-  margin: auto;
-  transition-duration: 1s;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.261);
-}
-
-.down:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-.flex {
+.courseCards {
+  position: absolute;
+  top: 270px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.cardContent h2 {
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.cardContent h2 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+.cardContent p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.cardContent a {
+  width: fit-content;
+  padding: 8px 20px;
+  margin: 15px auto;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }

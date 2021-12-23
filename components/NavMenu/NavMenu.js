@@ -14,7 +14,7 @@ export default function NavMenu() {
   const [menuBtnVisible, setMenuBtnVisible] = useState(true)
   const [menuItemsVisible, setMenuItemsVisible] = useState()
 
-  const initUI = () => {
+  const initUI = async () => {
     const menu = menuRef.current
 
     document.body.onscroll = () => {
@@ -29,6 +29,16 @@ export default function NavMenu() {
 
     document.addEventListener('mousedown', closeMenu)
     document.addEventListener('touchstart', closeMenu)
+
+    menu.addEventListener('mouseenter', () => {
+    })
+    menu.addEventListener('mouseleave', () => {
+      menu?.style.transition = '0.5s'
+
+      setTimeout(() => {
+        menu?.style.transition = null
+      }, 100)
+    })
   }
 
   useEffect(() => {
@@ -36,6 +46,8 @@ export default function NavMenu() {
     return () => {
       document.removeEventListener('mousedown', closeMenu)
       document.removeEventListener('touchstart', closeMenu)
+      menuRef?.current?.removeEventListener('mouseenter', () => {})
+      menuRef?.current?.removeEventListener('mouseleave', () => {}, 5)
     }
   }, [])
 

@@ -15,7 +15,6 @@
 .landing {
   display: flex;
   flex-direction: row;
-  margin: auto;
   height: 100%;
   width: 100%;
   justify-content: space-between;
@@ -26,14 +25,13 @@
   .landing {
     flex-direction: column-reverse;
     width: 100%;
-    margin: 10px;
     align-items: center;
     justify-content: center;
   }
 
   .starter {
     position: absolute;
-    top: 300px;
+    top: 200px;
     width: 70% !important;
     z-index: 1;
     margin: auto;
@@ -41,15 +39,16 @@
 
   .canvasContainer {
     position: absolute;
-    top: -40px;
+    top: -100px;
     width: 100%;
     height: 500px;
-    margin: auto;
+    left: 30px;
   }
 
   .canvasContainer2 {
     position: absolute;
     bottom: -120px !important;
+    left: 60% !important;
   }
 
   .large {
@@ -60,15 +59,24 @@
   }
 }
 
+@media (max-width: 400px) {
+  .canvasContainer2 {
+    left: 45% !important;
+  }
+}
+
 .starter {
   color: white;
   margin-left: 20px;
   width: 40%;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .large {
   font-family: JuliusSansOne-Regular;
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.268);
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 20px;
@@ -76,6 +84,8 @@
 
 .small {
   font-family: gotham-rounded;
+  /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.268);
 }
 
 /* Controls the dimentions of the canvas */
@@ -84,6 +94,7 @@
   right: 200px;
   width: 500px;
   height: 500px;
+  flex-shrink: 1;
 }
 
 .canvasContainer2 {

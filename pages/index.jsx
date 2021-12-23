@@ -1,30 +1,18 @@
-import React, { Suspense, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
-import router from 'next/router'
-import Footer from '../components/Footer/Footer'
 import NavMenu from '../components/NavMenu/NavMenu'
 import styles from './index.module.css'
 import { Canvas, useFrame } from '@react-three/fiber'
-import Laptop from '../components/Laptop/Laptop'
 import WhiteLaptop from '../components/WhiteLaptop/WhiteLaptop'
-import Box from '../components/Box/Box'
-import AnimatedSphere from '../components/AnimatedSphere/AnimatedSphere'
 
 import { OrbitControls } from '@react-three/drei'
-import Setup from '../components/Setup/Setup'
-import Hp from '../components/Hp/Hp'
-import GamingSetup from '../components/GamingSetup/GamingSetup'
 import Wave from 'react-wavify'
-import Graduation from '../components/Graduation/Graduation'
 import WideNavMenu from '../components/WideNavMenu/WideNavMenu'
-import CardsButton from '../components/CardsButton/CardsButton'
-import FacebookIcon from '@mui/icons-material/Facebook'
+//import FacebookIcon from '@mui/icons-material/Facebook'
 import GlowingHeadphones from '../components/GlowingHeadphones/GlowingHeadphones'
-import Logo from '../components/Logo/Logo'
+import Social from '../components/Social/Social'
 
 export default function Home() {
-  const [gradScale, setGradScale] = useState(0.1)
-
   return (
     <div className={styles.container}>
       <Head>
@@ -103,6 +91,7 @@ export default function Home() {
           }}
         />
       </div>
+      <Social />
     </div>
   )
 }

@@ -2,7 +2,7 @@
   "baseUrl": "http://localhost:3000",
   "component": {
     "testFiles": "**/*.spec.{js,ts,jsx,tsx}",
-    "componentFolder": "pages"
+    "componentFolder": "components"
   },
   "nodeVersion": "system"
 }
