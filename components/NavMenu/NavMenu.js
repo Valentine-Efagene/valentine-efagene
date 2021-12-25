@@ -114,13 +114,13 @@ export default function NavMenu() {
               </a>
             </Link>
           </NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>
+          {/* <NavMenuItem className={styles.menuItem}>
             <Link href="/location/location">
               <a className={styles.navLink}>
                 <MyLocationIcon /> Location
               </a>
             </Link>
-          </NavMenuItem>
+          </NavMenuItem> */}
         </div>
       )}
       <section></section>
