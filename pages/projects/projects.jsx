@@ -158,6 +158,41 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
+        <GlassCard
+        // style={{ background: 'black' }}
+        >
+          <div class={styles.cardContent}>
+            <h2>Win32 and x86_64 Assembly Calculator</h2>
+            <p>I made this as a proof-of-concept project.</p>
+            <div className={styles.links}>
+              <a
+                className={styles.projLink}
+                href="https://github.com/Valentine-Efagene/win32-C-and-x86_64-assembly-calculator"
+              >
+                <GitHubIcon style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard
+        // style={{ background: 'black' }}
+        >
+          <div class={styles.cardContent}>
+            <h2>Pong</h2>
+            <p>
+              This is a simple pong game I made using Javafx, while studying 2D
+              game physics.
+            </p>
+            <div className={styles.links}>
+              <a
+                className={styles.projLink}
+                href="https://github.com/Valentine-Efagene/Ping-Pong"
+              >
+                <GitHubIcon style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
       </div>
       <Footer />
     </div>

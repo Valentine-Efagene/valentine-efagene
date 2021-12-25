@@ -5,7 +5,7 @@ import Link from 'next/link'
 import ComputerIcon from '@mui/icons-material/Computer'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import SchoolIcon from '@mui/icons-material/School'
-import MyLocationIcon from '@mui/icons-material/MyLocation'
+//import MyLocationIcon from '@mui/icons-material/MyLocation'
 import HomeIcon from '@mui/icons-material/Home'
 
 export default function NavMenu() {
@@ -81,7 +81,9 @@ export default function NavMenu() {
           onBlur={closeMenu}
           className={styles.menuToggle}
         >
-          <img src="/menu-icon.svg" className={styles.menuIcon} />
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
       )}
       {menuItemsVisible && (
