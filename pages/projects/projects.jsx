@@ -9,7 +9,7 @@ import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import Rocket from '../../components/Rocket/Rocket'
 import YouTubeIcon from '@mui/icons-material/YouTube'
-import GitHubIcon from '@mui/icons-material/Github'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 export default function Projects() {
   return (
