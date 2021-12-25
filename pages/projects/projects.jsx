@@ -51,15 +51,15 @@ export default function Projects() {
             <div className={styles.links}>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://www.youtube.com/watch?v=XihYuIl-Ck8"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: 'black' }} /> Play store
               </a>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Projects() {
             <div className={styles.links}>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://youtu.be/6sbRDCF63ds"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
@@ -113,21 +113,21 @@ export default function Projects() {
         </GlassCard>
         <GlassCard>
           <div class={styles.cardContent}>
-            <h2>Machine Learning</h2>
+            <h2>Network Monitor</h2>
             <p>
-              Those courses have greatly aided my ability with animations and
-              game physics.
+              A C# .net WPF Windows desktop application for monitoring network
+              data usage.
             </p>
             <div className={styles.links}>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://www.youtube.com/watch?v=bxVpTbyIzVU"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://github.com/Valentine-Efagene/Network"
               >
                 <GitHubIcon style={{ color: 'black' }} />
               </a>
@@ -138,81 +138,21 @@ export default function Projects() {
         // style={{ background: 'black' }}
         >
           <div class={styles.cardContent}>
-            <h2>Image Processing and Computer Vision</h2>
+            <h2>Small Businesses</h2>
             <p>
-              This course helped me in my Image Processing and Computer Vision
-              journey. Noteably, my final project was on Image Processing and
-              Robotics, using OpenCV and an arduino car, using an ESP8266
-              module.
+              A demo e-commerce android application, using Java, android
+              Jetpack, Firebase and Google Maps API.
             </p>
             <div className={styles.links}>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://www.youtube.com/watch?v=KUrjFbDn1R4"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
-              >
-                <GitHubIcon style={{ color: 'black' }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard>
-        <GlassCard className={styles.glassCard}>
-          <div class={styles.cardContent}>
-            <h2>Computer Architecture</h2>
-            <p>
-              These courses gate me intimate insight into computers, digital
-              electronics and microcontrollers, which has helped me a whole lot
-              in my journey as a maker.
-            </p>
-            <div className={styles.links}>
-              <a
-                className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
-              >
-                <YouTubeIcon style={{ color: 'red' }} />
-              </a>
-              <a
-                className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
-              >
-                <GitHubIcon style={{ color: 'black' }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div class={styles.cardContent}>
-            <h2>Logic</h2>
-            <p>
-              Considering that logic control statements are all over all
-              programming languages, the importance of this does not need much
-              saying.
-            </p>
-            {/* <a className={styles.projLink} href="#">Read More</a> */}
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div class={styles.cardContent}>
-            <h2>Low Level Programming</h2>
-            <p>
-              I was introduced to assembly language and bytecode programming. I
-              am actually an x86_64 assembly programmer today.
-            </p>
-            <div className={styles.links}>
-              <a
-                className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
-              >
-                <YouTubeIcon style={{ color: 'red' }} />
-              </a>
-              <a
-                className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://github.com/Valentine-Efagene/Small_Businesses"
               >
                 <GitHubIcon style={{ color: 'black' }} />
               </a>
