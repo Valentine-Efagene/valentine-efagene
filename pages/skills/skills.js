@@ -8,7 +8,7 @@ import NavMenu from '../../components/NavMenu/NavMenu'
 
 export default function Mobile() {
   return (
-    <div className={styles.mobileMain}>
+    <div className={styles.main}>
       <NavMenu />
       <div className={styles.canvasContainer}>
         <Canvas className={styles.canvas}>

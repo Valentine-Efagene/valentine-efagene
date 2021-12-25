@@ -13,7 +13,13 @@ function Tilt(props) {
   return <div ref={tilt} {...rest} />
 }
 
-export default function GlassCard({ children, style, options, className }) {
+export default function GlassCard({
+  children,
+  style,
+  options,
+  className,
+  onClick,
+}) {
   const _options = {
     max: 25,
     scale: 1,
@@ -24,7 +30,7 @@ export default function GlassCard({ children, style, options, className }) {
   }
 
   return (
-    <Tilt options={_options} class={styles.card} style={style}>
+    <Tilt options={_options} className={styles.card} style={style}>
       {children}
     </Tilt>
   )

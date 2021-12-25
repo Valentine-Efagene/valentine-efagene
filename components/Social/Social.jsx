@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram'
 import EmailIcon from '@mui/icons-material/Email'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import YouTubeIcon from '@mui/icons-material/YouTube'
 
 export default function Social() {
   const [active, setActive] = useState()
@@ -58,7 +59,7 @@ export default function Social() {
       </li>
       <li style={{ '--i': 7 }}>
         <a href="#">
-          <EmailIcon />
+          <YouTubeIcon />
         </a>
       </li>
     </div>

@@ -94,16 +94,16 @@ export default function NavMenu() {
             </Link>
           </NavMenuItem>
           <NavMenuItem className={styles.menuItem}>
-            <Link href="/desktop/desktop">
+            <Link href="/projects/projects">
               <a className={styles.navLink}>
-                <ComputerIcon /> Desktop Projects
+                <ComputerIcon /> Projects
               </a>
             </Link>
           </NavMenuItem>
           <NavMenuItem className={styles.menuItem}>
-            <Link href="/mobile/mobile">
+            <Link href="/skills/skills">
               <a className={styles.navLink}>
-                <PhoneIphoneIcon /> Mobile Projects
+                <PhoneIphoneIcon /> Skills
               </a>
             </Link>
           </NavMenuItem>
