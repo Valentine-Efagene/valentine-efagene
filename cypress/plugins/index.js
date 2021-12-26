@@ -17,9 +17,23 @@
  */
 // eslint-disable-next-line no-unused-vars
 
-const injectDevServer = require('@cypress/react/plugins/next')
+const injectNextDevServer = require('@cypress/react/plugins/next')
+const codeCoverageTask = require('@cypress/code-coverage/task')
 
+/**
+ * @type {Cypress.PluginConfig}
+ */
+
+// https://github.com/nottyo/nextjs-cypress-ct/blob/main/cypress/plugins/index.js
+// https://docs.cypress.io/guides/component-testing/introduction#Install
+
+// eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
-  injectDevServer(on, config)
+  // `on` is used to hook into various events Cypress emits
+  // `config` is the resolved Cypress config
+  if (config.testingType === 'component') {
+    injectNextDevServer(on, config)
+  }
+  codeCoverageTask(on, config)
   return config
 }

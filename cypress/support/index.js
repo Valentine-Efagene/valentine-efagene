@@ -20,3 +20,10 @@ import './commands'
 // require('./commands')
 
 //beforeEach(() => {})
+
+// I, Valentine, added the following line, as directed by
+// https://medium.com/geekculture/component-testing-next-js-application-with-cypress-28fa311adda6
+// https://docs.cypress.io/guides/component-testing/introduction#Writing-Component-Tests
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
+import '@cypress/code-coverage/support'
