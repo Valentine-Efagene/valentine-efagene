@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react'
-//import Samsung from '../../components/Samsung/Samsung'
 import Setup from '../../components/Setup/Setup'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
