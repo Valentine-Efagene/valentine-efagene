@@ -8,6 +8,11 @@ title: Stylized Treasure Map
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { number } from 'prop-types'
+
+Model.propTypes = {
+  scale: number,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()

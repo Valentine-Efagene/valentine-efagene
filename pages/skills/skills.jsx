@@ -25,7 +25,7 @@ export default function Mobile() {
 
       <div className={styles.skillCards}>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/react.svg" alt="" />
             <h2>React JS</h2>
             <p>To put it simply, I build this website using React JS.</p>
@@ -33,7 +33,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/next.svg" alt="" />
             <h2>Next JS</h2>
             <p>To put it simply, I build this website using React JS.</p>
@@ -41,7 +41,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/angular.svg" alt="" />
             <h2>Angular JS</h2>
             <p>
@@ -52,7 +52,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/laravel.svg" style={{ marginTop: '30px' }} alt="" />
             <h2>Laravel</h2>
             <p>I use laravel for my PHP projects.</p>
@@ -60,7 +60,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/c++.svg" alt="" />
             <h2>C++</h2>
             <p>
@@ -70,7 +70,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/c-sharp.svg" alt="" />
             <h2>C#</h2>
             <p>I use C# for windows applications.</p>
@@ -79,7 +79,7 @@ export default function Mobile() {
         <GlassCard
         // style={{ background: 'black' }}
         >
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/java.svg" alt="" style={{ width: '50%' }} />
             <h2>Java</h2>
             <p>
@@ -90,7 +90,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard className={styles.glassCard}>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/kotlin.svg" alt="" />
             <h2>Kotlin</h2>
             <p>I use Kotlin purely for android Jetpack applications.</p>
@@ -98,7 +98,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img
               src="/python.svg"
               alt=""
@@ -115,14 +115,14 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>x86_64 Assembly</h2>
             <p>I use this mostly for educational purpose.</p>
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Electronics Design and Construction</h2>
             <p>
               I am well experienced in proteus electronics design and simulation
@@ -132,7 +132,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <img src="/arduino.svg" alt="" />
             <h2>Arduino C</h2>
             <p>

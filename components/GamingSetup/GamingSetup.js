@@ -8,7 +8,13 @@ title: Gaming Desktop PC
 
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, TransformControls, StandardEffects } from '@react-three/drei'
+import { array, number } from 'prop-types'
 import { useFrame } from '@react-three/fiber'
+
+Model.propTypes = {
+  rotation: array,
+  scale: number,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()
@@ -27,7 +33,7 @@ export default function Model({ ...props }) {
 
   useEffect(() => {
     group.current.addEventListener('drag', () => {
-      console.log('Dragging')
+      //console.log('Dragging')
       group.current.rotation.y += 0.01
     })
     return () => {}

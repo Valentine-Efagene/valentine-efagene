@@ -1,5 +1,5 @@
 import React from 'react'
-import { func } from 'prop-types'
+import { func, any } from 'prop-types'
 import styles from './NavMenuItem.module.css'
 
 export default function NavMenuItem({ onClick, onBlur, children }) {
@@ -13,4 +13,5 @@ export default function NavMenuItem({ onClick, onBlur, children }) {
 NavMenuItem.propTypes = {
   onClick: func,
   onBlur: func,
+  children: any,
 }

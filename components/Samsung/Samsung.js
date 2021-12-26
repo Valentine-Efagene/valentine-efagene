@@ -9,6 +9,11 @@ title: Samsung S21 Ultra
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+import { array } from 'prop-types'
+
+Model.propTypes = {
+  scale: array,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()

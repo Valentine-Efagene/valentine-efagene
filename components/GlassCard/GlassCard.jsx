@@ -1,3 +1,4 @@
+import { any, func, object, string } from 'prop-types'
 import React, { useEffect, useRef } from 'react'
 import VanillaTilt from 'vanilla-tilt'
 import styles from './GlassCard.module.css'
@@ -11,6 +12,10 @@ function Tilt(props) {
   }, [options])
 
   return <div ref={tilt} {...rest} />
+}
+
+Tilt.propTypes = {
+  options: object,
 }
 
 export default function GlassCard({
@@ -39,4 +44,12 @@ export default function GlassCard({
       {children}
     </Tilt>
   )
+}
+
+GlassCard.propTypes = {
+  children: any,
+  style: object,
+  options: object,
+  className: string,
+  onClick: func,
 }

@@ -13,7 +13,13 @@ import {
   TransformControls,
   StandardEffects,
 } from '@react-three/drei'
+import { number } from 'prop-types'
 //import { Controls, useControl } from 'react-three-gui'
+
+Model.propTypes = {
+  scale: number,
+  move: array,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()

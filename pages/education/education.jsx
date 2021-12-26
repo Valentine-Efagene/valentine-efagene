@@ -38,7 +38,7 @@ export default function Education() {
 
           <div className={styles.courseCards}>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Robotics and Control Systems Engineering</h2>
                 <p>
                   Those courses have greatly aided my ability with animations
@@ -48,7 +48,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Computer Graphics</h2>
                 <p>
                   Those courses have greatly aided my ability with animations
@@ -58,7 +58,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Engineering Mathematics</h2>
                 <p>
                   My training in engineering mathematics has helped me avoid
@@ -70,7 +70,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Machine Learning</h2>
                 <p>
                   Those courses have greatly aided my ability with animations
@@ -82,7 +82,7 @@ export default function Education() {
             <GlassCard
             // style={{ background: 'black' }}
             >
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Image Processing and Computer Vision</h2>
                 <p>
                   This course helped me in my Image Processing and Computer
@@ -94,7 +94,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard className={styles.glassCard}>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Computer Architecture</h2>
                 <p>
                   These courses gate me intimate insight into computers, digital
@@ -105,7 +105,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Logic</h2>
                 <p>
                   Considering that logic control statements are all over all
@@ -116,7 +116,7 @@ export default function Education() {
               </div>
             </GlassCard>
             <GlassCard>
-              <div class={styles.cardContent}>
+              <div className={styles.cardContent}>
                 <h2>Low Level Programming</h2>
                 <p>
                   I was introduced to assembly language and bytecode

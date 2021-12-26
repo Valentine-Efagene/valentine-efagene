@@ -9,6 +9,11 @@ title: HP ProBook
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
+import { number } from 'prop-types'
+
+Model.propTypes = {
+  scale: number,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()

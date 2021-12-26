@@ -30,7 +30,7 @@ export default function Projects() {
 
       <div className={styles.projectCards}>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>WifiController</h2>
             <p>
               An android app for controlling wifi modules like the ESP32
@@ -57,7 +57,7 @@ export default function Projects() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Organizer</h2>
             <p>
               A .net C# windows desktop application for organizing files in a
@@ -81,7 +81,7 @@ export default function Projects() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Face-controlled arduino car</h2>
             <p>
               An openCV and maker project, used as my final year project, using
@@ -104,7 +104,7 @@ export default function Projects() {
           </div>
         </GlassCard>
         <GlassCard>
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Network Monitor</h2>
             <p>
               A C# .net WPF Windows desktop application for monitoring network
@@ -129,7 +129,7 @@ export default function Projects() {
         <GlassCard
         // style={{ background: 'black' }}
         >
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Small Businesses</h2>
             <p>
               A demo e-commerce android application, using Java, android
@@ -154,7 +154,7 @@ export default function Projects() {
         <GlassCard
         // style={{ background: 'black' }}
         >
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Win32 and x86_64 Assembly Calculator</h2>
             <p>I made this as a proof-of-concept project.</p>
             <div className={styles.links}>
@@ -170,7 +170,7 @@ export default function Projects() {
         <GlassCard
         // style={{ background: 'black' }}
         >
-          <div class={styles.cardContent}>
+          <div className={styles.cardContent}>
             <h2>Pong</h2>
             <p>
               This is a simple pong game I made using Javafx, while studying 2D

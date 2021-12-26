@@ -33,7 +33,7 @@ export default function Home() {
             Hi there. Thanks for taking out time to see my website
           </div>
           <div className={styles.small}>
-            I'm Valentine Efagene, a versatile, creative and resilient
+            I&apos;m Valentine Efagene, a versatile, creative and resilient
             electronics and software engineer with 4+ years of experience in
             electronics design and construction, and software design,
             development and testing. A team worker, with excellent

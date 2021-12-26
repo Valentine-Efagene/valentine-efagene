@@ -30,13 +30,12 @@ export default function NavMenu() {
     document.addEventListener('mousedown', closeMenu)
     document.addEventListener('touchstart', closeMenu)
 
-    menu.addEventListener('mouseenter', () => {
-    })
+    menu.addEventListener('mouseenter', () => {})
     menu.addEventListener('mouseleave', () => {
-      menu?.style.transition = '0.5s'
+      menu.style.transition = '0.5s'
 
       setTimeout(() => {
-        menu?.style.transition = null
+        menu.style.transition = null
       }, 100)
     })
   }
@@ -81,9 +80,9 @@ export default function NavMenu() {
           onBlur={closeMenu}
           className={styles.menuToggle}
         >
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       )}
       {menuItemsVisible && (
