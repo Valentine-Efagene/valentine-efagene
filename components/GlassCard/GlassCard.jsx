@@ -30,7 +30,12 @@ export default function GlassCard({
   }
 
   return (
-    <Tilt options={_options} className={styles.card} style={style}>
+    <Tilt
+      options={_options}
+      className={`${styles.card} ${className}`}
+      style={style}
+      onClick={onClick}
+    >
       {children}
     </Tilt>
   )
