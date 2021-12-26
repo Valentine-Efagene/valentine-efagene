@@ -1,9 +1,10 @@
 import React, { Suspense } from 'react'
-import Samsung from '../../components/Samsung/Samsung'
+//import Samsung from '../../components/Samsung/Samsung'
+import Setup from '../../components/Setup/Setup'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import styles from './skills.module.css'
-import Footer from '../../components/Footer/Footer'
+//import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import GlassCard from '../../components/GlassCard/GlassCard'
 
@@ -17,7 +18,7 @@ export default function Mobile() {
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
           <Suspense fallback={null}>
-            <Samsung scale={0.1} />
+            <Setup scale={0.4} />
           </Suspense>
         </Canvas>
       </div>
@@ -142,7 +143,7 @@ export default function Mobile() {
           </div>
         </GlassCard>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

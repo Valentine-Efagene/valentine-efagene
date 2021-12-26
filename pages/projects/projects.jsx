@@ -3,28 +3,19 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import GlassCard from '../../components/GlassCard/GlassCard'
 import styles from './projects.module.css'
-import Footer from '../../components/Footer/Footer'
+//import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import Rocket from '../../components/Rocket/Rocket'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import Icon from '@mui/material/Icon'
 
 export default function Projects() {
   return (
     <div className={styles.main}>
       <WideNavMenu />
       <NavMenu />
-      {/* <div className={styles.canvasContainer}>
-        <Canvas className={styles.canvas}>
-          <OrbitControls enableZoom={false} />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[-2, 5, 2]} intensity={1} />
-          <Suspense fallback={null}>
-            <Hp scale={0.25} />
-          </Suspense>
-        </Canvas>
-      </div> */}
 
       <div className={styles.canvasContainer}>
         <Canvas className={styles.canvas}>
@@ -58,7 +49,9 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
               >
-                <GitHubIcon style={{ color: 'black' }} /> Play store
+                <Icon style={{ position: 'relative', left: '2px' }}>
+                  <img src="/google-play.svg" alt="" />
+                </Icon>
               </a>
             </div>
           </div>
@@ -194,7 +187,7 @@ export default function Projects() {
           </div>
         </GlassCard>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

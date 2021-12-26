@@ -25,7 +25,7 @@ export default function Model({ ...props }) {
 
     group.current.rotation.y += ry
     group.current.position.y += vy * (reverse ? -1 : 1)
-    console.log(group.current.position.y)
+    //console.log(group.current.position.y)
     //console.log(reverse)
 
     setReverse(

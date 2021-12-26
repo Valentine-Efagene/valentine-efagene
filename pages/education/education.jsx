@@ -3,7 +3,7 @@ import Graduation from '../../components/Graduation/Graduation'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import styles from './education.module.css'
-import Footer from '../../components/Footer/Footer'
+//import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import GlassCard from '../../components/GlassCard/GlassCard'
@@ -129,7 +129,7 @@ export default function Education() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

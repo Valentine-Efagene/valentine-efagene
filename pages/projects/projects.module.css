@@ -64,15 +64,45 @@
 }
 
 .projLink {
+  position: relative;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* background: #fff; */
-  /* color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  z-index: 1;
   text-decoration: none;
-  background-color: white;
-  /* background-color: rgba(255, 255, 255, 0.241); */
+  background-color: transparent;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.projLink::before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.projLink * {
+  z-index: inherit;
+}
+
+.projLink:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.projLink:hover {
+  background-color: white;
 }
 
 .links {

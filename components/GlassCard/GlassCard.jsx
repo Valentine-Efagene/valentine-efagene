@@ -25,7 +25,7 @@ export default function GlassCard({
     scale: 1,
     speed: 400,
     glare: true,
-    'max-glare': 1,
+    'max-glare': 0.4,
     ...options,
   }
 

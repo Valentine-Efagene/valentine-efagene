@@ -1,0 +1,54 @@
+.rippleButton {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  background: transparent;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* border: 1px solid white; */
+  margin: 5px;
+}
+
+.rippleButton span,
+.rippleButton i {
+  position: absolute;
+  z-index: 100;
+  color: blue;
+  transition: 0.5s;
+}
+
+.rippleButton:hover span,
+.ripple-button:hover i {
+  color: black;
+}
+
+.rippleButton:hover {
+  color: blue;
+}
+
+.rippleButton::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: blue;
+  transition: width 0.5s, height 0.5s;
+  overflow: hidden;
+}
+
+.rippleButton:hover::before {
+  width: 300px;
+  height: 300px;
+}

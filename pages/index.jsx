@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import NavMenu from '../components/NavMenu/NavMenu'
 import styles from './index.module.css'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import WhiteLaptop from '../components/WhiteLaptop/WhiteLaptop'
 
 import { OrbitControls } from '@react-three/drei'
