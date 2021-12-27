@@ -90,7 +90,7 @@ export default function Home() {
           }}
         />
       </div>
-      <Social />
+      <Social className={styles.social} />
     </div>
   )
 }

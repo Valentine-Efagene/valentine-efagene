@@ -64,6 +64,15 @@
   .large {
     font-size: xx-large !important;
   }
+
+  .starter {
+    top: 100px;
+  }
+
+  .social {
+    left: 10px;
+    top: -40px;
+  }
 }
 
 .starter {

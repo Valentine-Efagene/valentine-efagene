@@ -9,8 +9,9 @@ import EmailIcon from '@mui/icons-material/Email'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import YouTubeIcon from '@mui/icons-material/YouTube'
+import { string } from 'prop-types'
 
-export default function Social() {
+export default function Social({ className }) {
   const [active, setActive] = useState()
 
   const toggle = () => {
@@ -18,7 +19,9 @@ export default function Social() {
   }
 
   return (
-    <div className={`${styles.menu} ${active ? styles.active : ''}`}>
+    <div
+      className={`${styles.menu} ${active ? styles.active : ''} ${className}`}
+    >
       <div className={styles.toggle} onClick={toggle}>
         <AddIcon />
       </div>
@@ -64,4 +67,8 @@ export default function Social() {
       </li>
     </div>
   )
+}
+
+Social.propTypes = {
+  className: string,
 }
