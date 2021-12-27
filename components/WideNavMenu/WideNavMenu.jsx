@@ -11,7 +11,7 @@ export default function WideNavMenu() {
     <div className={styles.menu}>
       <ActiveLink href="/">Home</ActiveLink>
       <ActiveLink href="/projects/projects">Projects</ActiveLink>
-      <ActiveLink href="/mobile/mobile">Skills</ActiveLink>
+      <ActiveLink href="/skills/skills">Skills</ActiveLink>
       <ActiveLink href="/education/education">Education</ActiveLink>
       {/* <ActiveLink href="/location/location"></ActiveLink> */}
     </div>

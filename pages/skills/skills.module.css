@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #01a2d3;
+  /* background-color: #01a2d3; */
+  background-color: #78c52f;
   overflow-y: auto;
   width: 100%;
   height: 100%;
