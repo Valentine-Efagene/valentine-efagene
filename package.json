@@ -32,6 +32,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "html-webpack-plugin": "^4.5.2",
     "webpack": "^4.46.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^3.11.3",
+    "@cypress/react": "^5.10.3"
   }
 }
