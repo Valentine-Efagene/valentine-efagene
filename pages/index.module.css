@@ -59,9 +59,13 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .canvasContainer2 {
     left: 45% !important;
+  }
+
+  .large {
+    font-size: xx-large !important;
   }
 }
 
