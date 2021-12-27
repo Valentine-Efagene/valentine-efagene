@@ -10,6 +10,7 @@ import Rocket from '../../components/Rocket/Rocket'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import Icon from '@mui/material/Icon'
+import MyImage from '../../components/MyImage/MyImage'
 
 export default function Projects() {
   return (
@@ -50,7 +51,7 @@ export default function Projects() {
                 href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
               >
                 <Icon style={{ position: 'relative', left: '2px' }}>
-                  <img src="/google-play.svg" alt="" />
+                  <MyImage src="/google-play.svg" alt="" layout="fill" />
                 </Icon>
               </a>
             </div>

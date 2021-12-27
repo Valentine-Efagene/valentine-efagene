@@ -3,14 +3,18 @@ import Setup from '../../components/Setup/Setup'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import styles from './skills.module.css'
+import Image from 'next/image'
 //import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import GlassCard from '../../components/GlassCard/GlassCard'
+import MyImage from '../../components/MyImage/MyImage'
+import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 
 export default function Mobile() {
   return (
     <div className={styles.main}>
       <NavMenu />
+      <WideNavMenu />
       <div className={styles.canvasContainer}>
         <Canvas className={styles.canvas}>
           <OrbitControls enableZoom={false} />
@@ -25,23 +29,44 @@ export default function Mobile() {
       <div className={styles.skillCards}>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/react.svg" alt="" />
+            <MyImage
+              src="/react.svg"
+              alt=""
+              className={styles.cardImg}
+              layout="fixed"
+              width={200}
+              height={200}
+            />
             <h2>React JS</h2>
-            <p>To put it simply, I build this website using React JS.</p>
+            <p>I build this website using React JS.</p>
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/next.svg" alt="" />
+            <MyImage
+              src="/next.svg"
+              layout="fixed"
+              width={200}
+              height={200}
+              alt=""
+              className={styles.cardImg}
+            />
             <h2>Next JS</h2>
-            <p>To put it simply, I build this website using React JS.</p>
+            <p>I build this website using Next JS.</p>
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/angular.svg" alt="" />
+            <MyImage
+              src="/angular.svg"
+              alt=""
+              layout="fixed"
+              width={200}
+              height={200}
+              className={styles.cardImg}
+            />
             <h2>Angular JS</h2>
             <p>
               Those courses have greatly aided my ability with animations and
@@ -52,7 +77,14 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/laravel.svg" style={{ marginTop: '30px' }} alt="" />
+            <MyImage
+              src="/laravel.svg"
+              alt=""
+              layout="fixed"
+              width={200}
+              height={200}
+              className={styles.cardImg}
+            />
             <h2>Laravel</h2>
             <p>I use laravel for my PHP projects.</p>
             {/* <a href="#">Read More</a> */}
@@ -60,7 +92,14 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/c++.svg" alt="" />
+            <MyImage
+              src="/c++.svg"
+              alt=""
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
+            />
             <h2>C++</h2>
             <p>
               I use C++ for win32 windows and console applications, and
@@ -70,7 +109,14 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/c-sharp.svg" alt="" />
+            <MyImage
+              src="/c-sharp.svg"
+              alt=""
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
+            />
             <h2>C#</h2>
             <p>I use C# for windows applications.</p>
           </div>
@@ -79,7 +125,14 @@ export default function Mobile() {
         // style={{ background: 'black' }}
         >
           <div className={styles.cardContent}>
-            <img src="/java.svg" alt="" style={{ width: '50%' }} />
+            <MyImage
+              src="/java.svg"
+              alt=""
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
+            />
             <h2>Java</h2>
             <p>
               I use Java with android Jetpack for android projects, Javafx
@@ -90,7 +143,14 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard className={styles.glassCard}>
           <div className={styles.cardContent}>
-            <img src="/kotlin.svg" alt="" />
+            <MyImage
+              src="/kotlin.svg"
+              alt=""
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
+            />
             <h2>Kotlin</h2>
             <p>I use Kotlin purely for android Jetpack applications.</p>
             {/* <a href="#">Read More</a> */}
@@ -98,10 +158,13 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img
+            <MyImage
               src="/python.svg"
               alt=""
-              style={{ width: '100px', height: '100px' }}
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
             />
             <h2>Python</h2>
             <p>
@@ -132,7 +195,14 @@ export default function Mobile() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <img src="/arduino.svg" alt="" />
+            <MyImage
+              src="/arduino.svg"
+              alt=""
+              layout="fixed"
+              width={100}
+              height={100}
+              className={styles.cardImg}
+            />
             <h2>Arduino C</h2>
             <p>
               I use C while programming Arduino or ESP modules for my

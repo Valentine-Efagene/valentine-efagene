@@ -1,4 +1,5 @@
 import React from 'react'
+import MyImage from '../MyImage/MyImage'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -9,7 +10,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/vercel.svg" alt="Vercel" className="logo" />
+        <MyImage src="/vercel.svg" alt="Vercel" className="logo" />
       </a>
     </footer>
   )

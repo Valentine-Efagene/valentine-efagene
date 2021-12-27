@@ -36,6 +36,7 @@
   position: absolute;
   pointer-events: none;
   top: 80px;
+  padding: 100px 0;
 }
 
 .cardContent {
@@ -43,7 +44,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-content: center;
   transition: 0.5s;
+}
+
+.cardImg {
+  margin: auto;
 }
 
 .cardContent h2 {
