@@ -35,12 +35,12 @@
     "html-webpack-plugin": "^4.5.2",
     "webpack": "^4.46.0",
     "webpack-dev-server": "^3.11.3",
+    "@cypress/webpack-dev-server": "^1.7.0",
+    "cypress": "^9.1.1",
+    "@cypress/react": "^5.10.3",
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",
     "@babel/plugin-transform-modules-commonjs": "^7.16.5",
-    "@cypress/code-coverage": "^3.9.12",
-    "@cypress/react": "^5.10.3",
-    "@cypress/webpack-dev-server": "^1.7.0",
-    "cypress": "^9.1.1"
+    "@cypress/code-coverage": "^3.9.12"
   }
 }
