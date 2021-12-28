@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 4;
 }
 
 .menu li {
@@ -71,6 +71,12 @@
     width: 40px;
     height: 40px;
   }
+
+  .menu {
+    left: 10px;
+    top: -15px !important;
+    transform: scale(0.7);
+  }
 }
 
 .menu .twitterIcon {
@@ -95,4 +101,10 @@
 
 .menu .githubIcon {
   transform: rotate(-90deg);
+}
+
+.snackbar {
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
 }

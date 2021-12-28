@@ -70,12 +70,6 @@
     margin: auto !important;
     align-self: center !important;
   }
-
-  .social {
-    left: 100px;
-    top: -15px !important;
-    transform: scale(0.7);
-  }
 }
 
 .starter {
