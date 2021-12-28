@@ -5,7 +5,6 @@ import Link from 'next/link'
 import ComputerIcon from '@mui/icons-material/Computer'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone'
 import SchoolIcon from '@mui/icons-material/School'
-//import MyLocationIcon from '@mui/icons-material/MyLocation'
 import HomeIcon from '@mui/icons-material/Home'
 
 export default function NavMenu() {
@@ -17,6 +16,7 @@ export default function NavMenu() {
   const initUI = async () => {
     const menu = menuRef.current
 
+    // Currently useless
     document.body.onscroll = () => {
       setMenuItemsVisible(false)
       setMenuBtnVisible(true)
@@ -87,33 +87,25 @@ export default function NavMenu() {
       )}
       {menuItemsVisible && (
         <div className={styles.menuItems}>
-          <NavMenuItem className={styles.menuItem}>
-            <Link href="/">
-              <a className={styles.navLink}>
-                <HomeIcon /> Home
-              </a>
-            </Link>
+          <NavMenuItem
+            href="/"
+            className={styles.menuItem}
+            tooltipTitle="Home page"
+          >
+            <HomeIcon /> Home
           </NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>
-            <Link href="/projects/projects">
-              <a className={styles.navLink}>
-                <ComputerIcon /> Projects
-              </a>
-            </Link>
+          <NavMenuItem
+            href="/projects"
+            className={styles.menuItem}
+            tooltipTitle={'Some of my projects over the years'}
+          >
+            <ComputerIcon /> Projects
           </NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>
-            <Link href="/skills/skills">
-              <a className={styles.navLink}>
-                <PhoneIphoneIcon /> Skills
-              </a>
-            </Link>
+          <NavMenuItem href="/skills" className={styles.menuItem}>
+            <PhoneIphoneIcon /> Skills
           </NavMenuItem>
-          <NavMenuItem className={styles.menuItem}>
-            <Link href="/education/education">
-              <a className={styles.navLink}>
-                <SchoolIcon /> Education
-              </a>
-            </Link>
+          <NavMenuItem href="/education" className={styles.menuItem}>
+            <SchoolIcon /> Education
           </NavMenuItem>
           {/* <NavMenuItem className={styles.menuItem}>
             <Link href="/location/location">

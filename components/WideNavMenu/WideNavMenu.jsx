@@ -10,9 +10,9 @@ export default function WideNavMenu() {
   return (
     <div className={styles.menu}>
       <ActiveLink href="/">Home</ActiveLink>
-      <ActiveLink href="/projects/projects">Projects</ActiveLink>
-      <ActiveLink href="/skills/skills">Skills</ActiveLink>
-      <ActiveLink href="/education/education">Education</ActiveLink>
+      <ActiveLink href="/projects">Projects</ActiveLink>
+      <ActiveLink href="/skills">Skills</ActiveLink>
+      <ActiveLink href="/education">Education</ActiveLink>
       {/* <ActiveLink href="/location/location"></ActiveLink> */}
     </div>
   )

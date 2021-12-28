@@ -187,6 +187,38 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
+        <GlassCard
+        // style={{ background: 'black' }}
+        >
+          <div className={styles.cardContent}>
+            <h2>This Website</h2>
+            <p>
+              This website was built using Next.js, with Cypress for both
+              component and integration testing, and Instanbul coverage for code
+              coverage.
+            </p>
+          </div>
+        </GlassCard>
+        <GlassCard
+        // style={{ background: 'black' }}
+        >
+          <div className={styles.cardContent}>
+            <h2>Other Projects</h2>
+            <p>
+              Note that this page does not present an exhaustive list of my
+              projects. Please see my github repositories for more exciting
+              projects.
+            </p>
+            <div className={styles.links}>
+              <a
+                className={styles.projLink}
+                href="https://github.com/Valentine-Efagene"
+              >
+                <GitHubIcon style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
       </div>
       {/* <Footer /> */}
     </div>

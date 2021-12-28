@@ -37,15 +37,11 @@
   transition: 0.5s;
 }
 
-.menu li a:hover {
-  color: red;
-}
-
 .toggle {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +51,10 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
   font-size: 2em;
   transition: transform 1.25s;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
 }
 
 .menu.active .toggle {
@@ -71,4 +71,28 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.menu .twitterIcon {
+  transform: rotate(180deg);
+}
+
+.menu .instagramIcon {
+  transform: rotate(90deg);
+}
+
+.menu .whatsappIcon {
+  transform: rotate(270deg);
+}
+
+.menu .youtubeIcon {
+  transform: rotate(90deg);
+}
+
+.menu .emailIcon {
+  transform: rotate(180deg);
+}
+
+.menu .githubIcon {
+  transform: rotate(-90deg);
 }

@@ -8,8 +8,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
 }
 
 .menuItem:hover {
   transform: scale(1.09);
+}
+
+.activeLink {
+  font-style: italic;
+  /* font-weight: bold; */
 }

@@ -29,7 +29,7 @@
   .starter {
     position: absolute;
     top: 200px;
-    width: 70% !important;
+    width: 95% !important;
     z-index: 1;
     margin: auto;
   }
@@ -71,7 +71,7 @@
 
   .social {
     left: 100px;
-    top: -15px;
+    top: -15px !important;
     transform: scale(0.7);
   }
 }
@@ -87,7 +87,7 @@
 .large {
   font-family: JuliusSansOne-Regular;
   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.268);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.268);
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 20px;
@@ -96,7 +96,8 @@
 .small {
   font-family: gotham-rounded;
   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.268);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
 }
 
 /* Controls the dimentions of the canvas */

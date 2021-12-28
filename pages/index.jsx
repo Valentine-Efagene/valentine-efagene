@@ -30,13 +30,13 @@ export default function Home() {
       <div className={styles.landing}>
         <div className={styles.starter}>
           <div className={styles.large}>
-            Hi there. Thanks for taking out time to see my website
+            Hi there. Thanks for taking out time to see my portfolio
           </div>
           <div className={styles.small}>
             I am Valentine Efagene, a versatile, creative and resilient
             electronics and software engineer with 4+ years of experience in
             electronics design and construction, and software design,
-            development and testing. A team worker, with excellent
+            development and testing; a team worker, with excellent
             interpersonal, communication and problem-solving skills.
           </div>
         </div>

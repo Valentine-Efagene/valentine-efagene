@@ -10,9 +10,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import { string } from 'prop-types'
+import Snackbar from '@mui/material/Snackbar'
 
 export default function Social({ className }) {
   const [active, setActive] = useState()
+  const [openSnackBar, setOpenSnackBar] = useState(false)
+  const [snackBarMessage, setSnackBarMessage] = useState(false)
 
   const toggle = () => {
     setActive((prevState) => !prevState)
@@ -22,47 +25,109 @@ export default function Social({ className }) {
     <div
       className={`${styles.menu} ${active ? styles.active : ''} ${className}`}
     >
+      <Snackbar
+        open={openSnackBar}
+        autoHideDuration={3000}
+        onClose={() => {
+          setOpenSnackBar(false)
+        }}
+        message={snackBarMessage}
+      />
       <div className={styles.toggle} onClick={toggle}>
         <AddIcon />
       </div>
       <li style={{ '--i': 0 }}>
-        <a href="#">
-          <FacebookIcon />
+        <a
+          href="https://web.facebook.com/valentine.efagene"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          <FacebookIcon
+            className={styles.facebookIcon}
+            style={{ color: 'blue' }}
+          />
         </a>
       </li>
       <li style={{ '--i': 1 }}>
-        <a href="#">
-          <WhatsAppIcon />
+        <a href="https://wa.me/+23453229765" target={'_blank'} rel="noreferrer">
+          <WhatsAppIcon
+            className={styles.whatsappIcon}
+            style={{ color: 'green' }}
+          />
         </a>
       </li>
-      <li style={{ '--i': 2 }}>
-        <a href="#">
-          <TwitterIcon />
+      <li
+        style={{ '--i': 2 }}
+        onClick={() => {
+          setSnackBarMessage(
+            `Sorry, I'm not on Instagram yet. This button is a reminder for me.`
+          )
+          setOpenSnackBar(true)
+        }}
+      >
+        <a>
+          <TwitterIcon
+            className={styles.twitterIcon}
+            style={{ color: 'blue' }}
+          />
         </a>
       </li>
-      <li style={{ '--i': 3 }}>
-        <a href="#">
-          <InstagramIcon />
+      <li
+        style={{ '--i': 3 }}
+        onClick={() => {
+          setSnackBarMessage(
+            `Sorry, I'm not on Instagram yet.  This button is a reminder for me.`
+          )
+          setOpenSnackBar(true)
+        }}
+      >
+        <a>
+          <InstagramIcon
+            className={styles.instagramIcon}
+            style={{ color: 'purple' }}
+          />
         </a>
       </li>
       <li style={{ '--i': 4 }}>
-        <a href="#">
-          <LinkedInIcon />
+        <a
+          href="https://www.linkedin.com/in/valentine-efagene-1b81681a2/"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          <LinkedInIcon
+            className={styles.linkedInIcon}
+            style={{ color: 'blue' }}
+          />
         </a>
       </li>
       <li style={{ '--i': 5 }}>
-        <a href="#">
-          <GitHubIcon />
+        <a
+          href="https://github.com/Valentine-Efagene"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          <GitHubIcon className={styles.githubIcon} />
         </a>
       </li>
       <li style={{ '--i': 6 }}>
-        <a href="#">
-          <EmailIcon />
+        <a
+          href="mailto:efagenevalentine@gmail.com"
+          target={'_blank'}
+          rel="noreferrer"
+        >
+          <EmailIcon className={styles.emailIcon} />
         </a>
       </li>
       <li style={{ '--i': 7 }}>
-        <a href="#">
-          <YouTubeIcon />
+        <a
+          target={'_blank'}
+          rel="noreferrer"
+          href="https://www.youtube.com/channel/UCOp4pUKPXy7Nsz7XE-ttBWQ"
+        >
+          <YouTubeIcon
+            className={styles.youtubeIcon}
+            style={{ color: 'red' }}
+          />
         </a>
       </li>
     </div>
