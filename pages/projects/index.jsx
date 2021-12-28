@@ -41,12 +41,16 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://www.youtube.com/watch?v=XihYuIl-Ck8"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
               >
@@ -67,12 +71,16 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://youtu.be/I1ajLtmc9d4"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://youtu.be/I1ajLtmc9d4"
               >
@@ -90,12 +98,16 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://youtu.be/6sbRDCF63ds"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Face-Controlled-Robotic-Car"
               >
@@ -113,6 +125,8 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://www.youtube.com/watch?v=bxVpTbyIzVU"
               >
@@ -138,6 +152,8 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://www.youtube.com/watch?v=KUrjFbDn1R4"
               >
@@ -160,6 +176,8 @@ export default function Projects() {
             <p>I made this as a proof-of-concept project.</p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/win32-C-and-x86_64-assembly-calculator"
               >
@@ -179,6 +197,8 @@ export default function Projects() {
             </p>
             <div className={styles.links}>
               <a
+                target={'_blank'}
+                rel="noreferrer"
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Ping-Pong"
               >
@@ -212,6 +232,8 @@ export default function Projects() {
             <div className={styles.links}>
               <a
                 className={styles.projLink}
+                target={'_blank'}
+                rel="noreferrer"
                 href="https://github.com/Valentine-Efagene"
               >
                 <GitHubIcon style={{ color: 'black' }} />

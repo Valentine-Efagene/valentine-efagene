@@ -67,6 +67,8 @@
 
   .starter {
     top: 100px;
+    margin: auto !important;
+    align-self: center !important;
   }
 
   .social {
