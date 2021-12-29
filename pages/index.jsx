@@ -52,6 +52,8 @@ export default function Home() {
             {/* <axisHelper /> */}
             <Suspense fallback={null}>
               <WhiteLaptop
+                move={true}
+                time={Date.now()}
                 scale={0.05}
                 rotation={[0.5, -2, 0.0]}
                 position={[-4.2, -0.9, -10.5]}
@@ -71,6 +73,8 @@ export default function Home() {
             {/* <axisHelper /> */}
             <Suspense fallback={null}>
               <GlowingHeadphones
+                animate={true}
+                time={Date.now()}
                 scale={0.8}
                 rotation={[0, 1, 0]}
                 position={[0, 0, 0]}

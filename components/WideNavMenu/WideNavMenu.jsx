@@ -13,7 +13,6 @@ export default function WideNavMenu() {
       <ActiveLink href="/projects">Projects</ActiveLink>
       <ActiveLink href="/skills">Skills</ActiveLink>
       <ActiveLink href="/education">Education</ActiveLink>
-      {/* <ActiveLink href="/location/location"></ActiveLink> */}
     </div>
   )
 }

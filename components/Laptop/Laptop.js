@@ -6,12 +6,50 @@ source: https://sketchfab.com/3d-models/hacker-laptop-803cf6b3a1ac4de9b3306e9c11
 title: Hacker Laptop
 */
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import { bool } from 'prop-types'
+
+Model.propTypes = {
+  move: bool,
+}
 
 export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/Laptop.gltf')
+
+  const [reverse, setReverse] = useState()
+
+  let ry = 0.005
+  let vy = 0.005
+  const limit = 2
+  const buffer = 0.2
+
+  useFrame((state, delta) => {
+    if (!props.move) return
+
+    //group.current.rotation.y += ry
+    group.current.position.y += vy * (reverse ? -1 : 1)
+    //console.log(group.current.position.y)
+    //console.log(reverse)
+
+    setReverse(
+      group.current.position.y > limit || group.current.position.y < -limit
+        ? true
+        : false
+    )
+
+    if (
+      group.current.position.y > limit - buffer ||
+      group.current.position.y < -limit + buffer
+    ) {
+      vy = 0.0025
+    } else {
+      vy = 0.005
+    }
+  })
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
