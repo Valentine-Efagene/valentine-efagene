@@ -14,6 +14,7 @@
   flex-direction: row;
   height: 100%;
   width: 100%;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,16 +23,18 @@
   .landing {
     flex-direction: column-reverse;
     width: 100%;
+    margin: auto;
     align-items: center;
     justify-content: center;
   }
 
   .starter {
     position: absolute;
-    top: 260px;
+    margin: auto;
     width: 95% !important;
     z-index: 1;
-    margin: auto;
+    margin-left: 0 !important;
+    align-self: center;
   }
 
   .canvasContainer {
@@ -54,6 +57,14 @@
     font-weight: bolder;
     margin-bottom: 20px;
   }
+
+  .small {
+    background-color: rgba(0, 0, 0, 0.446);
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    align-self: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -73,8 +84,11 @@
     margin: auto;
   }
 
+  .social {
+    margin: auto;
+  }
+
   .starter {
-    top: 100px;
     margin: auto !important;
     align-self: center !important;
   }
@@ -82,7 +96,8 @@
 
 .starter {
   color: white;
-  margin-left: 100px;
+  top: 100px;
+  margin: auto;
   width: 40%;
   text-align: left;
   z-index: 2;
@@ -157,4 +172,60 @@
   left: 0;
   height: 100vh;
   width: 100vw;
+}
+
+/* .resumeButton {
+  margin: 20px auto;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+} */
+
+.resumeButton {
+  position: relative;
+  border-radius: 20px;
+  margin: 10px auto;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  background-color: transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.resumeButton:hover {
+  color: black;
+}
+
+.resumeButton::before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.resumeButton span {
+  z-index: 3;
+}
+
+.resumeButton:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.resumeButton:hover {
+  background-color: white;
 }
