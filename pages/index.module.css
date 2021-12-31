@@ -28,7 +28,7 @@
 
   .starter {
     position: absolute;
-    top: 200px;
+    top: 260px;
     width: 95% !important;
     z-index: 1;
     margin: auto;
@@ -74,14 +74,17 @@
 
 .starter {
   color: white;
-  margin-left: 20px;
+  margin-left: 100px;
   width: 40%;
+  text-align: left;
   z-index: 2;
   flex-shrink: 0;
 }
 
 .large {
-  font-family: JuliusSansOne-Regular;
+  /* font-family: JuliusSansOne-Regular; */
+  font-family: gotham-rounded;
+  font-variant-caps: all-petite-caps;
   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.268);
   font-size: 50px;
@@ -92,7 +95,7 @@
 .small {
   font-family: gotham-rounded;
   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  /* text-shadow: 1px 1px rgba(0, 0, 0, 0.1); */
   color: rgb(255, 255, 255);
 }
 
