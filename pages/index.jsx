@@ -39,12 +39,15 @@ export default function Home() {
             development and testing; a team worker, with excellent
             interpersonal, communication and problem-solving skills.
           </div>
-          <button
-            className={`${styles.resumeButton} ${styles.rippleButton}`}
-            variant="contained"
+          <a
+            className={styles.resumeButton}
+            //variant="contained"
+            href="https://drive.google.com/file/d/1PrufzDuowNH48oJ8KdbUkSzSfNCtpsvj/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
           >
             <span>Resume</span>
-          </button>
+          </a>
         </div>
         <div className={styles.canvasContainer}>
           <Canvas className={styles.canvas}>

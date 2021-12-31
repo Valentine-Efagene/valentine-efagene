@@ -185,7 +185,10 @@
 
 .resumeButton {
   position: relative;
+  cursor: pointer;
   border-radius: 20px;
+  width: fit-content;
+  font-style: normal;
   margin: 10px auto;
   font-size: 15px;
   display: flex;
