@@ -46,7 +46,7 @@ export default function Social({ className }) {
           >
             <FacebookIcon
               className={styles.facebookIcon}
-              style={{ color: 'blue' }}
+              style={{ color: '#365999' }}
             />
           </a>
         </li>
@@ -58,7 +58,7 @@ export default function Social({ className }) {
           >
             <WhatsAppIcon
               className={styles.whatsappIcon}
-              style={{ color: 'green' }}
+              style={{ color: '#25d366' }}
             />
           </a>
         </li>
@@ -74,7 +74,7 @@ export default function Social({ className }) {
           <a>
             <TwitterIcon
               className={styles.twitterIcon}
-              style={{ color: 'blue' }}
+              style={{ color: '#55acee' }}
             />
           </a>
         </li>
@@ -90,7 +90,7 @@ export default function Social({ className }) {
           <a>
             <InstagramIcon
               className={styles.instagramIcon}
-              style={{ color: 'purple' }}
+              style={{ color: '#e4405f' }}
             />
           </a>
         </li>
@@ -102,7 +102,7 @@ export default function Social({ className }) {
           >
             <LinkedInIcon
               className={styles.linkedInIcon}
-              style={{ color: 'blue' }}
+              style={{ color: '#0077b5' }}
             />
           </a>
         </li>
