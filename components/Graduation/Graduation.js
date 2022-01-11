@@ -9,43 +9,39 @@ title: Graduation
 import React, { useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { array } from 'prop-types'
+import { bool, any } from 'prop-types'
+import { vel_scale, vel_scale_spin } from '../../utils/calculations'
 
 Model.propTypes = {
-  move: array,
+  animate: bool,
+  time: any,
 }
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const [reverse, setReverse] = useState()
-
-  let ry = 0.005
-  let vy = 0.005
-  const limit = 2
-  const buffer = 0.2
+  const [spun, setSpun] = useState(false)
+  let e_time
+  const animation_time = 3000
+  const ry = 0.01
+  const vy = 0.01
+  let rsy, vsy
 
   useFrame((state, delta) => {
-    if (!props.move) return
+    if (!props.animate) return
 
-    group.current.rotation.y += ry
-    group.current.position.y += vy * (reverse ? -1 : 1)
-    console.log(group.current.position.y)
-    //console.log(reverse)
-
-    setReverse(
-      group.current.position.y > limit || group.current.position.y < -limit
-        ? true
-        : false
-    )
-
-    if (
-      group.current.position.y > limit - buffer ||
-      group.current.position.y < -limit + buffer
-    ) {
-      vy = 0.0025
-    } else {
-      vy = 0.005
+    if (!spun) {
+      const t = 1000
+      vsy = vel_scale_spin(Date.now() - props.time, 0, t, 0, 3.1415)
+      group.current.rotation.y += 0.2 * vsy
+      setSpun(Date.now() - props.time >= t ? true : false)
+      return
     }
+
+    e_time = (Date.now() - props.time) % animation_time
+    vsy = vel_scale(e_time, 0, animation_time, 0, 2 * 3.1415)
+    rsy = vel_scale(e_time, 0, 3000, 0, 2 * 3.1415)
+    group.current.position.y += vy * vsy
+    group.current.rotation.y += ry * rsy
   })
 
   const { nodes, materials } = useGLTF('/graduation.gltf')

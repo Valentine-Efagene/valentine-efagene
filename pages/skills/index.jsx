@@ -3,7 +3,7 @@ import Setup from '../../components/Setup/Setup'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import styles from './skills.module.css'
-import Image from 'next/image'
+//import Image from 'next/image'
 //import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import GlassCard from '../../components/GlassCard/GlassCard'
@@ -21,7 +21,7 @@ export default function Mobile() {
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 2]} intensity={1} />
           <Suspense fallback={null}>
-            <Setup scale={0.4} />
+            <Setup scale={0.4} time={Date.now()} animate={true} />
           </Suspense>
         </Canvas>
       </div>

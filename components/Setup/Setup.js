@@ -13,12 +13,17 @@ import {
   TransformControls,
   StandardEffects,
 } from '@react-three/drei'
-import { number, array } from 'prop-types'
+import { number, array, bool } from 'prop-types'
+import { useFrame } from '@react-three/fiber'
+import { vel_scale } from '../../utils/calculations'
 //import { Controls, useControl } from 'react-three-gui'
 
 Model.propTypes = {
+  animate: bool,
+  rotation: array,
+  position: array,
   scale: number,
-  move: array,
+  time: number,
 }
 
 export default function Model({ ...props }) {
@@ -40,6 +45,24 @@ export default function Model({ ...props }) {
       return () => controls.removeEventListener('dragging-changed', callback)
     }
   })*/
+
+  let ry = 0.005
+  let vy = 0.005
+  const anim_time = {
+    x: 1000,
+    y: 3000,
+    z: 1000,
+  }
+  let vsy, rsy
+  let e_time
+
+  useFrame((state, delta) => {
+    if (!props.animate) return
+
+    e_time = (Date.now() - props.time) % anim_time.y
+    vsy = vel_scale(e_time, 0, anim_time.y, 0, 2 * 3.1415)
+    group.current.position.y += vy * vsy
+  })
 
   const { nodes, materials } = useGLTF('/setup.gltf')
   return (

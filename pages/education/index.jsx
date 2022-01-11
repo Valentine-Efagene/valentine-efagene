@@ -3,7 +3,6 @@ import Graduation from '../../components/Graduation/Graduation'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import styles from './education.module.css'
-//import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import GlassCard from '../../components/GlassCard/GlassCard'
@@ -21,7 +20,7 @@ export default function Education() {
             <ambientLight intensity={0.5} />
             <directionalLight position={[-2, 5, 2]} intensity={1} />
             <Suspense fallback={null}>
-              <Graduation move={false} scale={0.2} />
+              <Graduation animate={true} scale={0.2} time={Date.now()} />
             </Suspense>
           </Canvas>
         </div>
