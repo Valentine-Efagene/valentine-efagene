@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Valentine Efagene</title>
         <link
           rel="preload"
           href="/fonts/gotham_rounded/GothamRounded-Book.otf"
