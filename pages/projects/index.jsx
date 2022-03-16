@@ -30,6 +30,18 @@ export default function Projects() {
       </div>
 
       <div className={styles.projectCards}>
+        <GlassCard
+        // style={{ background: 'black' }}
+        >
+          <div className={styles.cardContent}>
+            <h2>This Website</h2>
+            <p>
+              This website was built using Next.js, with Cypress for both
+              component and integration testing, and Instanbul coverage for code
+              coverage.
+            </p>
+          </div>
+        </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
             <h2>WifiController</h2>
@@ -82,7 +94,7 @@ export default function Projects() {
                 target={'_blank'}
                 rel="noreferrer"
                 className={styles.projLink}
-                href="https://youtu.be/I1ajLtmc9d4"
+                href="https://github.com/Valentine-Efagene/Organiser"
               >
                 <GitHubIcon style={{ color: 'black' }} />
               </a>
@@ -205,18 +217,6 @@ export default function Projects() {
                 <GitHubIcon style={{ color: 'black' }} />
               </a>
             </div>
-          </div>
-        </GlassCard>
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
-          <div className={styles.cardContent}>
-            <h2>This Website</h2>
-            <p>
-              This website was built using Next.js, with Cypress for both
-              component and integration testing, and Instanbul coverage for code
-              coverage.
-            </p>
           </div>
         </GlassCard>
         <GlassCard
