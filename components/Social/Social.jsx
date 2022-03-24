@@ -62,19 +62,13 @@ export default function Social({ className }) {
             />
           </a>
         </li>
-        <li
-          style={{ '--i': 2 }}
-          onClick={() => {
-            setSnackBarMessage(
-              `Sorry, I'm not on Instagram yet. This button is a reminder for me.`
-            )
-            setOpenSnackBar(true)
-          }}
-        >
+        <li style={{ '--i': 2 }}>
           <a>
             <TwitterIcon
               className={styles.twitterIcon}
               style={{ color: '#55acee' }}
+              href="https://twitter.com/Valentyne_VEE"
+              rel="noreferrer"
             />
           </a>
         </li>
