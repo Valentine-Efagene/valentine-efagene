@@ -29,15 +29,13 @@ export default function Home() {
       <NavMenu />
       <div className={styles.landing}>
         <div className={styles.starter}>
-          <div className={styles.large}>
-            Hi there. Thanks for taking out time to see my portfolio
-          </div>
+          <div className={styles.large}>Valentine Efagene</div>
           <div className={styles.small}>
-            I am Valentine Efagene, a versatile, creative and resilient
-            electronics and software engineer with 4+ years of experience in
-            electronics design and construction, and software design,
-            development and testing; a team worker, with excellent
-            interpersonal, communication and problem-solving skills.
+            Hi, I am a versatile, creative and resilient electronics and
+            software engineer with 4+ years of experience in electronics design
+            and construction, and software design, development and testing; a
+            team worker, with excellent interpersonal, communication and
+            problem-solving skills.
           </div>
           <a
             className={styles.resumeButton}
