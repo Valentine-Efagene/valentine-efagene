@@ -40,7 +40,8 @@ export default function Home() {
           <a
             className={styles.resumeButton}
             //variant="contained"
-            href="https://drive.google.com/file/d/1I2HdJGnUCOwlR76CB63Ss2WsKQf3nbmk/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1I2HdJGnUCOwlR76CB63Ss2WsKQf3nbmk/view?usp=sharing"
+            href="/_Valentine Efagene Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
