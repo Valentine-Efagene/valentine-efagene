@@ -57,7 +57,7 @@ export default function Mobile() {
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
-        <GlassCard>
+        {/* <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
               src="/angular.svg"
@@ -72,9 +72,8 @@ export default function Mobile() {
               Those courses have greatly aided my ability with animations and
               game physics.
             </p>
-            {/* <a href="#">Read More</a> */}
           </div>
-        </GlassCard>
+        </GlassCard> */}
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
@@ -176,11 +175,11 @@ export default function Mobile() {
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
+        {/* 
         <GlassCard>
           <div className={styles.cardContent}>
             <h2>x86_64 Assembly</h2>
             <p>I use this mostly for educational purpose.</p>
-            {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
         <GlassCard>
@@ -190,7 +189,6 @@ export default function Mobile() {
               I am well experienced in proteus electronics design and simulation
               suite.
             </p>
-            {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
         <GlassCard>
@@ -208,9 +206,8 @@ export default function Mobile() {
               I use C while programming Arduino or ESP modules for my
               electronics projects.
             </p>
-            {/* <a href="#">Read More</a> */}
           </div>
-        </GlassCard>
+        </GlassCard> */}
       </div>
       {/* <Footer /> */}
     </div>
