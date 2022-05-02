@@ -92,7 +92,7 @@ export default function Social({ className }) {
         </li>
         <li style={{ '--i': 4 }}>
           <a
-            href="https://www.linkedin.com/in/valentine-efagene-1b81681a2/"
+            href="https://www.linkedin.com/in/valentine-efagene/"
             target={'_blank'}
             rel="noreferrer"
           >

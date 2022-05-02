@@ -180,6 +180,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
+        {/*
         <GlassCard
         // style={{ background: 'black' }}
         >
@@ -198,7 +199,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
-        <GlassCard
+         <GlassCard
         // style={{ background: 'black' }}
         >
           <div className={styles.cardContent}>
@@ -218,7 +219,7 @@ export default function Projects() {
               </a>
             </div>
           </div>
-        </GlassCard>
+        </GlassCard> */}
         <GlassCard
         // style={{ background: 'black' }}
         >

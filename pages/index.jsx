@@ -31,11 +31,10 @@ export default function Home() {
         <div className={styles.starter}>
           <div className={styles.large}>Valentine Efagene</div>
           <div className={styles.small}>
-            Hi, I am a versatile, creative and resilient electronics and
-            software engineer with 4+ years of experience in electronics design
-            and construction, and software design, development and testing; a
-            team worker, with excellent interpersonal, communication and
-            problem-solving skills.
+            A versatile, creative and resilient software engineer (BENG Computer
+            Engineering, 2020) with 4+ years of experience in software design,
+            development and testing. A team worker, with excellent
+            interpersonal, communication and problem-solving skills.
           </div>
           <a
             className={styles.resumeButton}
