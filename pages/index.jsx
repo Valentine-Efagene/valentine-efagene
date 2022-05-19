@@ -17,12 +17,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Valentine Efagene</title>
-        {/* <link
-          rel="preload"
-          href="/fonts/gotham_rounded/GothamRounded-Book.otf"
-          as="font"
-          crossOrigin=""
-        /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WideNavMenu />
