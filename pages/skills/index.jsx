@@ -10,7 +10,7 @@ import GlassCard from '../../components/GlassCard/GlassCard'
 import MyImage from '../../components/MyImage/MyImage'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 
-export default function Mobile() {
+export default function Skills() {
   return (
     <div className={styles.main}>
       <NavMenu />
@@ -30,10 +30,10 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/react.svg"
+              src="/img/react.svg"
+              layout="fixed"
               alt=""
               className={styles.cardImg}
-              layout="fixed"
               width={200}
               height={200}
             />
@@ -45,7 +45,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/next.svg"
+              src="/img/next.svg"
               layout="fixed"
               width={200}
               height={200}
@@ -60,7 +60,7 @@ export default function Mobile() {
         {/* <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/angular.svg"
+              src="/img/angular.svg"
               alt=""
               layout="fixed"
               width={200}
@@ -77,7 +77,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/laravel.svg"
+              src="/img/laravel.svg"
               alt=""
               layout="fixed"
               width={200}
@@ -92,7 +92,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/c++.svg"
+              src="/img/c++.svg"
               alt=""
               layout="fixed"
               width={100}
@@ -109,7 +109,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/c-sharp.svg"
+              src="/img/c-sharp.svg"
               alt=""
               layout="fixed"
               width={100}
@@ -125,7 +125,7 @@ export default function Mobile() {
         >
           <div className={styles.cardContent}>
             <MyImage
-              src="/java.svg"
+              src="/img/java.svg"
               alt=""
               layout="fixed"
               width={100}
@@ -143,7 +143,7 @@ export default function Mobile() {
         <GlassCard className={styles.glassCard}>
           <div className={styles.cardContent}>
             <MyImage
-              src="/kotlin.svg"
+              src="/img/kotlin.svg"
               alt=""
               layout="fixed"
               width={100}
@@ -158,7 +158,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/python.svg"
+              src="/img/python.svg"
               alt=""
               layout="fixed"
               width={100}
@@ -194,7 +194,7 @@ export default function Mobile() {
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
-              src="/arduino.svg"
+              src="/img/arduino.svg"
               alt=""
               layout="fixed"
               width={100}

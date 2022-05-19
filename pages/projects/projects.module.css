@@ -58,9 +58,10 @@
 }
 
 .cardContent p {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fff;
   font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 .projLink {

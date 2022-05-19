@@ -20,6 +20,7 @@ export default function MyImage({
         width={width}
         height={height}
       />
+      {/* <img src={src} style={{ height, width }} alt="" srcset="" /> */}
     </div>
   )
 }

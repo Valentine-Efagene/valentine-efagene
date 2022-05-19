@@ -101,13 +101,21 @@ export default function NavMenu() {
           >
             <ComputerIcon /> Projects
           </NavMenuItem>
-          <NavMenuItem href="/skills" className={styles.menuItem}>
+          <NavMenuItem
+            tooltipTitle=""
+            href="/skills"
+            className={styles.menuItem}
+          >
             <PhoneIphoneIcon /> Skills
           </NavMenuItem>
-          <NavMenuItem href="/education" className={styles.menuItem}>
+          <NavMenuItem
+            tooltipTitle=""
+            href="/education"
+            className={styles.menuItem}
+          >
             <SchoolIcon /> Education
           </NavMenuItem>
-          {/* <NavMenuItem className={styles.menuItem}>
+          {/* <NavMenuItem tooltipTitle="" className={styles.menuItem}>
             <Link href="/location/location">
               <a className={styles.navLink}>
                 <MyLocationIcon /> Location
