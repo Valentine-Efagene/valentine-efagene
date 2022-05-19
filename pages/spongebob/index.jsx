@@ -15,7 +15,8 @@ export default function index() {
         <div className={styles.text}>
           <h1>I love Spongebob</h1>
           <span>
-            If you don't like that, take it, go kiss a flugnarg (MVA reference).
+            If you don&apos;t like that, take it, go kiss a flugnarg (MVA
+            reference).
           </span>
         </div>
         <img className={styles.img} src="/img/spongebob-pride.png" alt="" />
@@ -29,7 +30,8 @@ export default function index() {
         <div className={styles.text}>
           <h1>I love Spongebob</h1>
           <span>
-            If you don't like that, take it, go kiss a flugnarg (MVA reference).
+            If you don&apos;t like that, take it, go kiss a flugnarg (MVA
+            reference).
           </span>
         </div>
       </section>
@@ -37,7 +39,8 @@ export default function index() {
         <div className={styles.text}>
           <h1>I love Spongebob</h1>
           <span>
-            If you don't like that, take it, go kiss a flugnarg (MVA reference).
+            If you don&apos;t like that, take it, go kiss a flugnarg (MVA
+            reference).
           </span>
         </div>
         <img className={styles.img} src="/img/telescope.png" alt="" />
