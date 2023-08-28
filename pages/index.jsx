@@ -19,7 +19,7 @@ export default function Home() {
         <title>Valentine Efagene</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <WideNavMenu />
+      <WideNavMenu light={true} />
       <NavMenu />
       <div className={styles.landing}>
         <div className={styles.starter}>
