@@ -27,11 +27,11 @@ export default function Education() {
 
         <div className={styles.academics}>
           <div className={styles.degree}>
-            <span>BENG</span>
+            <h2>BENG</h2>
             <br />
-            <span>COMPUTER ENGINEERING</span>
+            <h2>Computer Engineering</h2>
             <br />
-            <span>FEDERAL UNIVERSITY OF BENIN, EDO, NIGERIA</span>
+            <h2>Federal University of Benin, Edo, Nigeria</h2>
             <br />
           </div>
 

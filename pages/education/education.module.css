@@ -7,7 +7,7 @@
   align-items: center;
   /* background: teal; */
   /* background: cornflowerblue; */
-  background-color: seagreen;
+  background-color: rgba(0, 0, 0, 0.676);
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -79,11 +79,14 @@
   margin: auto;
   width: 70%;
   text-align: center;
-  font-weight: 300;
-  font-size: 2em;
   color: white;
-  font-family: JuliusSansOne-Regular;
-  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+}
+
+.degree h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .academics {

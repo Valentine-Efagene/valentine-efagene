@@ -23,18 +23,20 @@ export default function Home() {
       <NavMenu />
       <div className={styles.landing}>
         <div className={styles.starter}>
-          <div className={styles.large}>Valentine Efagene</div>
-          <div className={styles.small}>
-            A versatile, creative and resilient software engineer (BENG Computer
-            Engineering, 2020) with 4+ years of experience in software design,
-            development and testing. A team worker, with excellent
-            interpersonal, communication and problem-solving skills.
-          </div>
+          <h1 className={styles.large}>Valentine Efagene</h1>
+          <h2>Front End Developer</h2>
+          <p className={styles.small}>
+            A front end developer (BENG Computer Engineering, 2020) with 4+
+            years of experience in software design, development and testing,
+            specialized in building performant web applications. A team worker,
+            with excellent interpersonal, communication and problem-solving
+            skills.
+          </p>
           <a
             className={styles.resumeButton}
             //variant="contained"
             // href="https://drive.google.com/file/d/1I2HdJGnUCOwlR76CB63Ss2WsKQf3nbmk/view?usp=sharing"
-            href="/_Valentine Efagene Resume.pdf"
+            href="https://drive.google.com/file/d/1ULAaPP680UBwXOCisik36Hg7PFvgTZPO/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >

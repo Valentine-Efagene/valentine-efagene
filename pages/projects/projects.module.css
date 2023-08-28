@@ -8,7 +8,7 @@
   height: 100%;
   overflow-y: auto;
   /* background-color: #78c52f; */
-  background-color: cadetblue;
+  background-color: var(--sea);
 }
 
 .canvasContainer {
@@ -33,7 +33,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   position: absolute;
   top: 80px;
 }
@@ -59,9 +59,14 @@
 
 .cardContent p {
   font-size: 1.2em;
+  font-size: 1rem;
   color: #fff;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
+
+  background-color: rgba(0, 0, 0, 0.446);
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .projLink {
@@ -113,4 +118,13 @@
   align-items: center;
   margin: 10px;
   z-index: 2;
+}
+
+.projectCards .projImg {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  height: 10rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-inline: auto;
 }

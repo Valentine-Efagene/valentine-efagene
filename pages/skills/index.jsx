@@ -38,7 +38,7 @@ export default function Skills() {
               height={200}
             />
             <h2>React JS</h2>
-            <p>I build this website using React JS.</p>
+            <p>I built this website using React JS.</p>
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
@@ -53,27 +53,11 @@ export default function Skills() {
               className={styles.cardImg}
             />
             <h2>Next JS</h2>
-            <p>I build this website using Next JS.</p>
+            <p>I built this website using Next JS.</p>
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
-        {/* <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/angular.svg"
-              alt=""
-              layout="fixed"
-              width={200}
-              height={200}
-              className={styles.cardImg}
-            />
-            <h2>Angular JS</h2>
-            <p>
-              Those courses have greatly aided my ability with animations and
-              game physics.
-            </p>
-          </div>
-        </GlassCard> */}
+
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
@@ -89,127 +73,7 @@ export default function Skills() {
             {/* <a href="#">Read More</a> */}
           </div>
         </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/c++.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>C++</h2>
-            <p>
-              I use C++ for win32 windows and console applications, and
-              OpenFrameworks creative coding appliations.
-            </p>
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/c-sharp.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>C#</h2>
-            <p>I use C# for windows applications.</p>
-          </div>
-        </GlassCard>
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/java.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>Java</h2>
-            <p>
-              I use Java with android Jetpack for android projects, Javafx
-              desktop projects, and Java Processing for creative coding.
-            </p>
-            {/* <a href="#">Read More</a> */}
-          </div>
-        </GlassCard>
-        <GlassCard className={styles.glassCard}>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/kotlin.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>Kotlin</h2>
-            <p>I use Kotlin purely for android Jetpack applications.</p>
-            {/* <a href="#">Read More</a> */}
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/python.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>Python</h2>
-            <p>
-              I use python for machine learning, data structures and algorithms,
-              data science, and windows console applications, occasionally using
-              it for windows GUI applications, where there is not too much focus
-              on UI beauty.
-            </p>
-            {/* <a href="#">Read More</a> */}
-          </div>
-        </GlassCard>
-        {/* 
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <h2>x86_64 Assembly</h2>
-            <p>I use this mostly for educational purpose.</p>
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <h2>Electronics Design and Construction</h2>
-            <p>
-              I am well experienced in proteus electronics design and simulation
-              suite.
-            </p>
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/arduino.svg"
-              alt=""
-              layout="fixed"
-              width={100}
-              height={100}
-              className={styles.cardImg}
-            />
-            <h2>Arduino C</h2>
-            <p>
-              I use C while programming Arduino or ESP modules for my
-              electronics projects.
-            </p>
-          </div>
-        </GlassCard> */}
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }

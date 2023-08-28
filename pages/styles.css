@@ -30,6 +30,10 @@ body {
   margin: 0;
 }
 
+:root {
+  --sea: #54a5d5;
+}
+
 * {
   scrollbar-color: rgba(0, 0, 0, 0.391) transparent;
   scrollbar-width: thin;

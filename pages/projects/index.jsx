@@ -3,7 +3,6 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import GlassCard from '../../components/GlassCard/GlassCard'
 import styles from './projects.module.css'
-//import Footer from '../../components/Footer/Footer'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import Rocket from '../../components/Rocket/Rocket'
@@ -12,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import Icon from '@mui/material/Icon'
 import playIcon from '../../public/img/google-play.svg'
 import MyImage from '../../components/MyImage/MyImage'
+import { Language, LinkedIn } from '@mui/icons-material'
 
 export default function Projects() {
   return (
@@ -31,9 +31,80 @@ export default function Projects() {
       </div>
 
       <div className={styles.projectCards}>
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>Java Energies</h2>
+            <img
+              className={styles.projImg}
+              src="/img/java-energies.png"
+              alt=""
+            />
+            <p>
+              Java Energies is an African energy company. I built this using
+              Typescript and Vite.
+            </p>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://javaenergies.com/"
+              >
+                <Language style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>Jatado Form Builder</h2>
+            <img
+              className={styles.projImg}
+              src="/img/jatado-form-builder.jpg"
+              alt=""
+            />
+            <p>
+              Jatado Form Builder is an internal application for a Jatado
+              Technologies
+            </p>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://formbuilder.jatado.com"
+              >
+                <Language style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>Traffic Pilot</h2>
+            <img
+              className={styles.projImg}
+              src="/img/trafficPilot.jpg"
+              alt=""
+            />
+            <p>
+              Traffic Pilot is an application for hijacking social media trends
+              for advertisement purposes. For NDA reasons, I can only share a
+              dev demo link.
+            </p>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="traffic-pilot-green.vercel.app/"
+              >
+                <Language style={{ color: 'black' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
           <div className={styles.cardContent}>
             <h2>This Website</h2>
             <p>
@@ -45,12 +116,43 @@ export default function Projects() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
+            <h2>Law Firm</h2>
+            <img className={styles.projImg} src="/img/lawfirm.webp" alt="" />
+            <p>
+              This is a law firm portfolio template, with a live blog, using
+              NextJS 13 and Sanity CMS. I took it up as a challenge to when
+              NextJS 13 was released.
+            </p>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.youtube.com/watch?v=yztAH4qTgsA"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.linkedin.com/posts/valentine-efagene_nextjs-nextjs13-blog-activity-7065221683468472320-ZEPy?utm_source=share&utm_medium=member_desktop"
+              >
+                <LinkedIn />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+
+        <GlassCard>
+          <div className={styles.cardContent}>
             <h2>WifiController</h2>
             <p>
               An android app for controlling wifi modules like the ESP32
               development module, leveraging the sensors on the device, and
-              designed control widgets. The project was built using Java and
-              Android Jetpack.
+              designed control widgets. I built this in my undergraduate days,
+              because I was an electronics hobbyist at the time. The project was
+              built using Java and Android Jetpack.
             </p>
             <div className={styles.links}>
               <a
@@ -78,9 +180,9 @@ export default function Projects() {
           <div className={styles.cardContent}>
             <h2>Organizer</h2>
             <p>
-              A .net C# windows desktop application for organizing files in a
-              device. It is to be installed as an option on the context menu
-              (right click), for quick access.
+              A .net C# windows desktop application I built in my undergraduate
+              days, for organizing files in a device. It is to be installed as
+              an option on the context menu (right click), for quick access.
             </p>
             <div className={styles.links}>
               <a
@@ -154,9 +256,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
+        <GlassCard>
           <div className={styles.cardContent}>
             <h2>Small Businesses</h2>
             <p>
@@ -181,49 +281,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
-        {/*
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
-          <div className={styles.cardContent}>
-            <h2>Win32 and x86_64 Assembly Calculator</h2>
-            <p>I made this as a proof-of-concept project.</p>
-            <div className={styles.links}>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://github.com/Valentine-Efagene/win32-C-and-x86_64-assembly-calculator"
-              >
-                <GitHubIcon style={{ color: 'black' }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard>
-         <GlassCard
-        // style={{ background: 'black' }}
-        >
-          <div className={styles.cardContent}>
-            <h2>Pong</h2>
-            <p>
-              This is a simple pong game I made using Javafx, while studying 2D
-              game physics.
-            </p>
-            <div className={styles.links}>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://github.com/Valentine-Efagene/Ping-Pong"
-              >
-                <GitHubIcon style={{ color: 'black' }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard> */}
-        <GlassCard
-        // style={{ background: 'black' }}
-        >
+        <GlassCard>
           <div className={styles.cardContent}>
             <h2>Other Projects</h2>
             <p>
@@ -239,6 +297,22 @@ export default function Projects() {
                 href="https://github.com/Valentine-Efagene"
               >
                 <GitHubIcon style={{ color: 'black' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.youtube.com/channel/UCOp4pUKPXy7Nsz7XE-ttBWQ"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.linkedin.com/posts/valentine-efagene_designer-design-react-activity-7045789888872353793-gQUr?utm_source=share&utm_medium=member_desktop"
+              >
+                <LinkedIn />
               </a>
             </div>
           </div>

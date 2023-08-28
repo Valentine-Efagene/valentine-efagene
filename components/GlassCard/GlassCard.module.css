@@ -1,6 +1,6 @@
 .card {
   width: 280px;
-  height: 400px;
+  min-height: 400px;
   margin: 10px 5px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);

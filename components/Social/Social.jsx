@@ -52,7 +52,7 @@ export default function Social({ className }) {
         </li>
         <li style={{ '--i': 1 }}>
           <a
-            href="https://wa.me/+23453229765"
+            href="https://wa.me/+2349034360573"
             target={'_blank'}
             rel="noreferrer"
           >
