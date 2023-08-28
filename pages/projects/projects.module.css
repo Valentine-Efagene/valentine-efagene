@@ -44,6 +44,8 @@
   flex-direction: column;
   text-align: center;
   transition: 0.5s;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.446);
 }
 
 .cardContent h2 {
@@ -84,6 +86,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   transition: 0.2s;
+  background-color: var(--sea);
 }
 
 .projLink::before {
