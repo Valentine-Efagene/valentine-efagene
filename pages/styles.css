@@ -32,6 +32,7 @@ body {
 
 :root {
   --sea: #54a5d5;
+  --shade: rgba(0, 0, 0, 0.446);
 }
 
 * {
