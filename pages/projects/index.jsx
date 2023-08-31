@@ -43,6 +43,10 @@ export default function Projects() {
               Java Energies is an African energy company. I built this using
               Typescript and Vite.
             </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>React, Typescript, Vite, CSS</p>
+            </div>
             <div className={styles.links}>
               <a
                 target={'_blank'}
@@ -67,6 +71,10 @@ export default function Projects() {
               Jatado Form Builder is an internal application for a Jatado
               Technologies
             </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>Django, React, CSS</p>
+            </div>
             <div className={styles.links}>
               <a
                 target={'_blank'}
@@ -92,6 +100,10 @@ export default function Projects() {
               for advertisement purposes. For NDA reasons, I can only share a
               dev demo link.
             </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>Javascript, React, Vite, Cypress</p>
+            </div>
             <div className={styles.links}>
               <a
                 target={'_blank'}
@@ -112,6 +124,40 @@ export default function Projects() {
               component and integration testing, and Instanbul coverage for code
               coverage.
             </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>NextJS, Cypress, ThreeJS, React, CSS</p>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>HB Account Opening</h2>
+            <img
+              className={styles.projImg}
+              src="/img/hb account opening.png"
+              alt=""
+            />
+            <p>
+              I was contacted to build this for a bank, using Laravel. It is a
+              simple support application to facilitate the account opening
+              process. The user fills a form, and the system generates a PDF,
+              and mails that to the relevant email.
+            </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>Laravel, Bootstrap, Javascript</p>
+            </div>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.loom.com/share/ed233e434094412587e7771c08069ff8?sid=394a72e9-a542-4935-a5a8-90ac837a7a7d"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+            </div>
           </div>
         </GlassCard>
         <GlassCard>
@@ -123,6 +169,10 @@ export default function Projects() {
               NextJS 13 and Sanity CMS. I took it up as a challenge to when
               NextJS 13 was released.
             </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>NextJS 13, Sanity</p>
+            </div>
             <div className={styles.links}>
               <a
                 target={'_blank'}

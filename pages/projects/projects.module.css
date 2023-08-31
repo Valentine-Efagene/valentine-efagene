@@ -42,25 +42,34 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   transition: 0.5s;
-  flex: 1;
   background-color: rgba(0, 0, 0, 0.446);
 }
 
 .cardContent h2 {
   color: rgba(255, 255, 255, 0.05);
   pointer-events: none;
-}
-
-.cardContent h2 {
-  font-size: 1.8em;
+  font-size: 1.4rem;
   color: #fff;
   z-index: 1;
 }
 
 .cardContent p {
-  font-size: 1.2em;
+  font-size: 0.7rem;
+  text-align: start;
+}
+
+.cardContent h3 {
+  font-size: 1rem;
+  color: #fff;
+  z-index: 1;
+  margin: 0;
+}
+
+.cardContent p {
+  font-size: 0.7em;
   font-size: 1rem;
   color: #fff;
   font-weight: 300;
@@ -69,6 +78,14 @@
   /* background-color: var(--shade); */
   border-radius: 1rem;
   padding: 1rem 0.5rem;
+}
+
+.skills {
+  display: none;
+}
+
+.skills p {
+  text-align: center;
 }
 
 .projLink {
