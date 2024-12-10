@@ -24,7 +24,7 @@ export default function Home() {
       <div className={styles.landing}>
         <div className={styles.starter}>
           <h1 className={styles.large}>Valentine Efagene</h1>
-          <h2 className={styles.sub}>Front End Developer</h2>
+          <h2 className={styles.sub}>Full Stack Developer</h2>
           <p className={styles.small}>
             A front end developer (BENG Computer Engineering, 2020) with 4+
             years of experience in software design, development and testing,
