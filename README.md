@@ -1,7 +1,9 @@
 # portfolio
 Portfolio website
 
-![Feature Image]([assets/project-image.png](https://valentine-efagene.vercel.app/))
+<p align="center">
+  <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="[https://www.quickshelter.ng/quickshelter.svg](https://valentine-efagene.vercel.app/)" alt="feature image" /></a>
+</p>
 
 [Check it out here!](https://valentine-efagene.vercel.app/)
 
