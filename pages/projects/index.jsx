@@ -13,6 +13,8 @@ import playIcon from '../../public/img/google-play.svg'
 import MyImage from '../../components/MyImage/MyImage'
 import { Language, LinkedIn } from '@mui/icons-material'
 
+const WEB_COLOR = 'white'
+
 export default function Projects() {
   return (
     <div className={styles.main}>
@@ -54,7 +56,35 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://javaenergies.com/"
               >
-                <Language style={{ color: 'black' }} />
+                <Language style={{ color: WEB_COLOR }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>Renewed Hope Admin Dashboard</h2>
+            <img
+              className={styles.projImg}
+              src="/img/renewed_hope.jpg"
+              alt=""
+            />
+            <p>
+              Java Energies is an African energy company. I built this using
+              Typescript and Vite.
+            </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>React, Typescript, Vite, CSS</p>
+            </div>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://renewedhopehomes.fmhud.gov.ng/"
+              >
+                <Language style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -82,7 +112,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://formbuilder.jatado.com"
               >
-                <Language style={{ color: 'black' }} />
+                <Language style={{ color: 'white' }} />
               </a>
             </div>
           </div>
@@ -111,7 +141,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="traffic-pilot-green.vercel.app/"
               >
-                <Language style={{ color: 'black' }} />
+                <Language style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -249,7 +279,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Organiser"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -276,7 +306,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Face-Controlled-Robotic-Car"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -301,7 +331,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Network"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -326,7 +356,7 @@ export default function Projects() {
                 className={styles.projLink}
                 href="https://github.com/Valentine-Efagene/Small_Businesses"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
@@ -346,7 +376,7 @@ export default function Projects() {
                 rel="noreferrer"
                 href="https://github.com/Valentine-Efagene"
               >
-                <GitHubIcon style={{ color: 'black' }} />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
               <a
                 target={'_blank'}

@@ -7,7 +7,8 @@
   align-items: center;
   /* background: teal; */
   /* background: cornflowerblue; */
-  background-color: rgba(0, 0, 0, 0.676);
+  /* background-color: rgba(0, 0, 0, 0.676); */
+  background: var(--sea);
   width: 100%;
   height: 100%;
   overflow-y: auto;

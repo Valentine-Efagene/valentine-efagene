@@ -33,6 +33,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 1rem;
   align-items: flex-start;
   position: absolute;
   top: 80px;
@@ -129,6 +130,11 @@
 
 .projLink:hover {
   background-color: white;
+}
+
+.projLink:hover svg {
+  stroke: black;
+  fill: black;
 }
 
 .links {

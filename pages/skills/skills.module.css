@@ -6,7 +6,8 @@
   align-items: center;
   /* background-color: #01a2d3; 
   /* background-color: #78c52f; */
-  background-color: rgba(0, 0, 0, 0.676);
+  /* background-color: rgba(0, 0, 0, 0.676); */
+  background: var(--sea);
   overflow-y: auto;
   width: 100%;
   height: 100%;
@@ -33,11 +34,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start;
+  gap: 2rem;
   align-items: center;
   position: absolute;
   top: 80px;
   margin: 100px 0;
+  padding-inline: 1rem;
 }
 
 .cardContent {
@@ -50,7 +53,7 @@
   transition: 0.5s;
 }
 
-.cardContent > img {
+.cardContent>img {
   aspect-ratio: 16/9;
   object-fit: cover;
 }

@@ -24,7 +24,7 @@ export default function Home() {
       <div className={styles.landing}>
         <div className={styles.starter}>
           <h1 className={styles.large}>Valentine Efagene</h1>
-          <h2>Front End Developer</h2>
+          <h2 className={styles.sub}>Front End Developer</h2>
           <p className={styles.small}>
             A front end developer (BENG Computer Engineering, 2020) with 4+
             years of experience in software design, development and testing,
@@ -36,7 +36,7 @@ export default function Home() {
             className={styles.resumeButton}
             //variant="contained"
             // href="https://drive.google.com/file/d/1I2HdJGnUCOwlR76CB63Ss2WsKQf3nbmk/view?usp=sharing"
-            href="https://drive.google.com/file/d/1ULAaPP680UBwXOCisik36Hg7PFvgTZPO/view?usp=drive_link"
+            href="https://docs.google.com/document/d/1jze4p4EkyoD4fC9vr_AeKeZ9pP-JOebhxlHgxk7aXHE/edit?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >
@@ -48,7 +48,7 @@ export default function Home() {
             <OrbitControls
               enableZoom={false}
               enablePan={false}
-              //enableRotate={false}
+            //enableRotate={false}
             />
             <ambientLight intensity={0.5} />
             <directionalLight position={[-2, 5, 2]} intensity={1} />
@@ -69,7 +69,7 @@ export default function Home() {
             <OrbitControls
               enableZoom={false}
               enablePan={false}
-              //enableRotate={false}
+            //enableRotate={false}
             />
             <ambientLight intensity={0.5} />
             <directionalLight position={[-2, 5, 2]} intensity={1} />
