@@ -58,21 +58,6 @@ export default function Skills() {
           </div>
         </GlassCard>
 
-        {/* <GlassCard>
-          <div className={styles.cardContent}>
-            <MyImage
-              src="/img/laravel.svg"
-              alt=""
-              layout="fixed"
-              width={200}
-              height={200}
-              className={styles.cardImg}
-            />
-            <h2>Laravel</h2>
-            <p>I use laravel for my PHP projects.</p>
-          </div>
-        </GlassCard> */}
-
         <GlassCard>
           <div className={styles.cardContent}>
             <MyImage
@@ -118,6 +103,21 @@ export default function Skills() {
             <h2>AWS Cloud Computing</h2>
             <p>Infrastructure</p>
             {/* <a href="#">Read More</a> */}
+          </div>
+        </GlassCard>
+
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <MyImage
+              src="/img/laravel.svg"
+              alt=""
+              layout="fixed"
+              width={200}
+              height={200}
+              className={styles.cardImg}
+            />
+            <h2>Laravel</h2>
+            <p>I use laravel for my PHP projects.</p>
           </div>
         </GlassCard>
       </div>

@@ -63,19 +63,18 @@ export default function Projects() {
         </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
-            <h2>Renewed Hope Admin Dashboard</h2>
+            <h2>Renewed Hope Admin </h2>
             <img
               className={styles.projImg}
               src="/img/renewed_hope.jpg"
               alt=""
             />
             <p>
-              Java Energies is an African energy company. I built this using
-              Typescript and Vite.
+              Renewed Hope is an housing project by the federal government of Nigeria. I built the admin dashboard, notifications API, and several other APIs.
             </p>
             <div className={styles.skills}>
               <h3>Skills</h3>
-              <p>React, Typescript, Vite, CSS</p>
+              <p>React, Typescript, Vitest, Supertest, CSS, AWS SQS, AWS Lambda, AWS SES, NestJS, NodeJS</p>
             </div>
             <div className={styles.links}>
               <a
@@ -85,6 +84,66 @@ export default function Projects() {
                 href="https://renewedhopehomes.fmhud.gov.ng/"
               >
                 <Language style={{ color: WEB_COLOR }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard><GlassCard>
+          <div className={styles.cardContent}>
+            <h2>HB Account Opening</h2>
+            <img
+              className={styles.projImg}
+              src="/img/hb account opening.png"
+              alt=""
+            />
+            <p>
+              It is a support application to facilitate the account opening
+              process. The user fills a form, and the system generates a PDF,
+              and mails that to the relevant email. It uses a queue for orchestration.
+            </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>Laravel, Bootstrap, Javascript</p>
+            </div>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.loom.com/share/ed233e434094412587e7771c08069ff8?sid=394a72e9-a542-4935-a5a8-90ac837a7a7d"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+            </div>
+          </div>
+        </GlassCard>
+        <GlassCard>
+          <div className={styles.cardContent}>
+            <h2>WifiController</h2>
+            <p>
+              An android app for controlling wifi modules like the ESP32
+              development module, leveraging the sensors on the device, and
+              designed control widgets. I built this in my undergraduate days,
+              because I was an electronics hobbyist at the time. The project was
+              built using Java and Android Jetpack.
+            </p>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.youtube.com/watch?v=XihYuIl-Ck8"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
+              >
+                <Icon style={{ position: 'relative', left: '2px' }}>
+                  <MyImage src={playIcon} alt="" layout="fill" />
+                </Icon>
               </a>
             </div>
           </div>
@@ -160,55 +219,20 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
+
         <GlassCard>
           <div className={styles.cardContent}>
-            <h2>HB Account Opening</h2>
-            <img
-              className={styles.projImg}
-              src="/img/hb account opening.png"
-              alt=""
-            />
+            <h2>Face-controlled arduino car</h2>
             <p>
-              I was contacted to build this for a bank, using Laravel. It is a
-              simple support application to facilitate the account opening
-              process. The user fills a form, and the system generates a PDF,
-              and mails that to the relevant email.
+              An openCV and maker project, used as my final year project, using
+              openCV, under OpenFrameworks (a C++ creative coding library).
             </p>
-            <div className={styles.skills}>
-              <h3>Skills</h3>
-              <p>Laravel, Bootstrap, Javascript</p>
-            </div>
             <div className={styles.links}>
               <a
                 target={'_blank'}
                 rel="noreferrer"
                 className={styles.projLink}
-                href="https://www.loom.com/share/ed233e434094412587e7771c08069ff8?sid=394a72e9-a542-4935-a5a8-90ac837a7a7d"
-              >
-                <YouTubeIcon style={{ color: 'red' }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <h2>Law Firm</h2>
-            <img className={styles.projImg} src="/img/lawfirm.webp" alt="" />
-            <p>
-              This is a law firm portfolio template, with a live blog, using
-              NextJS 13 and Sanity CMS. I took it up as a challenge to when
-              NextJS 13 was released.
-            </p>
-            <div className={styles.skills}>
-              <h3>Skills</h3>
-              <p>NextJS 13, Sanity</p>
-            </div>
-            <div className={styles.links}>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://www.youtube.com/watch?v=yztAH4qTgsA"
+                href="https://youtu.be/6sbRDCF63ds"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
               </a>
@@ -216,46 +240,14 @@ export default function Projects() {
                 target={'_blank'}
                 rel="noreferrer"
                 className={styles.projLink}
-                href="https://www.linkedin.com/posts/valentine-efagene_nextjs-nextjs13-blog-activity-7065221683468472320-ZEPy?utm_source=share&utm_medium=member_desktop"
+                href="https://github.com/Valentine-Efagene/Face-Controlled-Robotic-Car"
               >
-                <LinkedIn />
+                <GitHubIcon style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
         </GlassCard>
 
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <h2>WifiController</h2>
-            <p>
-              An android app for controlling wifi modules like the ESP32
-              development module, leveraging the sensors on the device, and
-              designed control widgets. I built this in my undergraduate days,
-              because I was an electronics hobbyist at the time. The project was
-              built using Java and Android Jetpack.
-            </p>
-            <div className={styles.links}>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://www.youtube.com/watch?v=XihYuIl-Ck8"
-              >
-                <YouTubeIcon style={{ color: 'red' }} />
-              </a>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://play.google.com/store/apps/details?id=com.valentyne.wificontroller&hl=en"
-              >
-                <Icon style={{ position: 'relative', left: '2px' }}>
-                  <MyImage src={playIcon} alt="" layout="fill" />
-                </Icon>
-              </a>
-            </div>
-          </div>
-        </GlassCard>
         <GlassCard>
           <div className={styles.cardContent}>
             <h2>Organizer</h2>
@@ -284,33 +276,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
-        <GlassCard>
-          <div className={styles.cardContent}>
-            <h2>Face-controlled arduino car</h2>
-            <p>
-              An openCV and maker project, used as my final year project, using
-              openCV, under OpenFrameworks (a C++ creative coding library).
-            </p>
-            <div className={styles.links}>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://youtu.be/6sbRDCF63ds"
-              >
-                <YouTubeIcon style={{ color: 'red' }} />
-              </a>
-              <a
-                target={'_blank'}
-                rel="noreferrer"
-                className={styles.projLink}
-                href="https://github.com/Valentine-Efagene/Face-Controlled-Robotic-Car"
-              >
-                <GitHubIcon style={{ color: WEB_COLOR }} />
-              </a>
-            </div>
-          </div>
-        </GlassCard>
+
         <GlassCard>
           <div className={styles.cardContent}>
             <h2>Network Monitor</h2>
@@ -336,7 +302,7 @@ export default function Projects() {
             </div>
           </div>
         </GlassCard>
-        <GlassCard>
+        {/* <GlassCard>
           <div className={styles.cardContent}>
             <h2>Small Businesses</h2>
             <p>
@@ -360,7 +326,7 @@ export default function Projects() {
               </a>
             </div>
           </div>
-        </GlassCard>
+        </GlassCard> */}
         <GlassCard>
           <div className={styles.cardContent}>
             <h2>Other Projects</h2>
@@ -391,6 +357,38 @@ export default function Projects() {
                 rel="noreferrer"
                 className={styles.projLink}
                 href="https://www.linkedin.com/posts/valentine-efagene_designer-design-react-activity-7045789888872353793-gQUr?utm_source=share&utm_medium=member_desktop"
+              >
+                <LinkedIn />
+              </a>
+            </div>
+          </div>
+        </GlassCard><GlassCard>
+          <div className={styles.cardContent}>
+            <h2>Law Firm</h2>
+            <img className={styles.projImg} src="/img/lawfirm.webp" alt="" />
+            <p>
+              This is a law firm portfolio template, with a live blog, using
+              NextJS 13 and Sanity CMS. I took it up as a challenge to when
+              NextJS 13 was released.
+            </p>
+            <div className={styles.skills}>
+              <h3>Skills</h3>
+              <p>NextJS 13, Sanity</p>
+            </div>
+            <div className={styles.links}>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.youtube.com/watch?v=yztAH4qTgsA"
+              >
+                <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://www.linkedin.com/posts/valentine-efagene_nextjs-nextjs13-blog-activity-7065221683468472320-ZEPy?utm_source=share&utm_medium=member_desktop"
               >
                 <LinkedIn />
               </a>
