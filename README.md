@@ -2,7 +2,7 @@
 Portfolio website
 
 <p align="center">
-  <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="[https://www.quickshelter.ng/quickshelter.svg](https://valentine-efagene.vercel.app/)" alt="feature image" /></a>
+  <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="https://valentine-efagene.vercel.app/" alt="feature image" /></a>
 </p>
 
 [Check it out here!](https://valentine-efagene.vercel.app/)
