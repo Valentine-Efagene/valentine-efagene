@@ -2,7 +2,7 @@
 Portfolio website
 
 <p align="center">
-  <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="[blob:null/a829018f-920e-4834-a2c9-c3aeeb3d88b7](https://drive.google.com/file/d/1x8lqt2PR7DL7jZGQcHliQ5TIJeOBYLt_/view?usp=drive_link)" alt="feature image" /></a>
+  <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="https://drive.google.com/file/d/1x8lqt2PR7DL7jZGQcHliQ5TIJeOBYLt_/view?usp=drive_link" alt="feature image" /></a>
 </p>
 
 [Check it out here!](https://valentine-efagene.vercel.app/)
