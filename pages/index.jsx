@@ -26,11 +26,8 @@ export default function Home() {
           <h1 className={styles.large}>Valentine Efagene</h1>
           <h2 className={styles.sub}>Full Stack Developer</h2>
           <p className={styles.small}>
-            A front end developer (BENG Computer Engineering, 2020) with 4+
-            years of experience in software design, development and testing,
-            specialized in building performant web applications. A team worker,
-            with excellent interpersonal, communication and problem-solving
-            skills.
+            I am a full-stack developer with 4+ years of experience in web
+            development. A lover of seamless state management, dependency injection, automated testing, orchestrated workflows, and normalized databases.
           </p>
           <a
             className={styles.resumeButton}
