@@ -6,12 +6,10 @@ import styles from './projects.module.css'
 import NavMenu from '../../components/NavMenu/NavMenu'
 import WideNavMenu from '../../components/WideNavMenu/WideNavMenu'
 import Rocket from '../../components/Rocket/Rocket'
-import YouTubeIcon from '@mui/icons-material/YouTube'
-import GitHubIcon from '@mui/icons-material/GitHub'
 import Icon from '@mui/material/Icon'
 import playIcon from '../../public/img/google-play.svg'
 import MyImage from '../../components/MyImage/MyImage'
-import { Language, LinkedIn } from '@mui/icons-material'
+import { Language, LinkedIn, YouTube as YouTubeIcon, GitHub as GitHubIcon } from '@mui/icons-material'
 
 const WEB_COLOR = 'white'
 
