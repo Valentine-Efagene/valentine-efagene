@@ -397,6 +397,14 @@ export default function Projects() {
               >
                 <LinkedIn />
               </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://github.com/Valentine-Efagene/law-portfolio/"
+              >
+                <GitHubIcon style={{ color: WEB_COLOR }} />
+              </a>
             </div>
           </div>
         </GlassCard>
