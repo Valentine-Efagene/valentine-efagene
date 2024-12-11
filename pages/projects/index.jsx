@@ -114,7 +114,7 @@ export default function Projects() {
                 target={'_blank'}
                 rel="noreferrer"
                 className={styles.projLink}
-                href="https://javaenergies.com/"
+                href="https://homebasebank.com/"
               >
                 <Language style={{ color: WEB_COLOR }} />
               </a>
