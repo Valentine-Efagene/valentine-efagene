@@ -83,10 +83,12 @@
 
 .skills {
   display: none;
+  flex-direction: column;
+  gap: 0;
 }
 
 .skills p {
-  text-align: center;
+  text-align: start;
 }
 
 .projLink {

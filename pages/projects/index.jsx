@@ -87,15 +87,14 @@ export default function Projects() {
           </div>
         </GlassCard><GlassCard>
           <div className={styles.cardContent}>
-            <h2>HB Account Opening</h2>
+            <h2>Homebase Account Opening</h2>
             <img
               className={styles.projImg}
               src="/img/hb account opening.png"
               alt=""
             />
             <p>
-              It is a support application to facilitate the account opening
-              process. The user fills a form, and the system generates a PDF,
+              The user fills a form, and the system generates a PDF,
               and mails that to the relevant email. It uses a queue for orchestration.
             </p>
             <div className={styles.skills}>
@@ -110,6 +109,14 @@ export default function Projects() {
                 href="https://www.loom.com/share/ed233e434094412587e7771c08069ff8?sid=394a72e9-a542-4935-a5a8-90ac837a7a7d"
               >
                 <YouTubeIcon style={{ color: 'red' }} />
+              </a>
+              <a
+                target={'_blank'}
+                rel="noreferrer"
+                className={styles.projLink}
+                href="https://javaenergies.com/"
+              >
+                <Language style={{ color: WEB_COLOR }} />
               </a>
             </div>
           </div>
