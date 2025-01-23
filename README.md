@@ -5,8 +5,6 @@ Portfolio website
   <a href="https://valentine-efagene.vercel.app/" target="blank"><img src="https://val-personal.s3.us-east-1.amazonaws.com/Image+10-12-2024+at+23.21.jpg" alt="feature image" /></a>
 </p>
 
-[Check it out here!](https://valentine-efagene.vercel.app/)
-
 
 ## Notes
 Remove (prepend the file name with any character to spoil it) the babelrc file to use the SWC transpiler, when you don't need Instanbul code coverage
