@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import GlassCard from '../../components/GlassCard/GlassCard'
@@ -9,7 +9,8 @@ import Rocket from '../../components/Rocket/Rocket'
 import Icon from '@mui/material/Icon'
 import playIcon from '../../public/img/google-play.svg'
 import MyImage from '../../components/MyImage/MyImage'
-import { Language, LinkedIn, YouTube as YouTubeIcon, GitHub as GitHubIcon } from '@mui/icons-material'
+import { Language, YouTube as YouTubeIcon, GitHub as GitHubIcon } from '@mui/icons-material'
+import LinkedIn from '../../components/icons/LinkedIn'
 
 const WEB_COLOR = 'white'
 
@@ -360,7 +361,7 @@ export default function Projects() {
               <a
                 target={'_blank'}
                 rel="noreferrer"
-                className={styles.projLink}
+                className={`${styles.projLink} ${styles.linkedIn}`}
                 href="https://www.linkedin.com/posts/valentine-efagene_designer-design-react-activity-7045789888872353793-gQUr?utm_source=share&utm_medium=member_desktop"
               >
                 <LinkedIn />
@@ -373,8 +374,7 @@ export default function Projects() {
             <img className={styles.projImg} src="/img/lawfirm.webp" alt="" />
             <p>
               This is a law firm portfolio template, with a live blog, using
-              NextJS 13 and Sanity CMS. I took it up as a challenge to when
-              NextJS 13 was released.
+              NextJS 13 and Sanity CMS. This is provided as a sample codebase.
             </p>
             <div className={styles.skills}>
               <h3>Skills</h3>
@@ -392,7 +392,7 @@ export default function Projects() {
               <a
                 target={'_blank'}
                 rel="noreferrer"
-                className={styles.projLink}
+                className={`${styles.projLink} ${styles.linkedIn}`}
                 href="https://www.linkedin.com/posts/valentine-efagene_nextjs-nextjs13-blog-activity-7065221683468472320-ZEPy?utm_source=share&utm_medium=member_desktop"
               >
                 <LinkedIn />

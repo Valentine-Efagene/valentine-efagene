@@ -26,8 +26,7 @@ export default function Home() {
           <h1 className={styles.large}>Valentine Efagene</h1>
           <h2 className={styles.sub}>Full Stack Developer</h2>
           <p className={styles.small}>
-            I am a full-stack developer with 4+ years of experience in web
-            development. A lover of seamless state management, dependency injection, automated testing, orchestrated workflows, and normalized databases.
+           A detail-oriented Senior Software Engineer with over 5 years of experience in web development, specialising in crafting performant APIs, and optimised, responsive, and user-focused interfaces.
           </p>
           <a
             className={styles.resumeButton}

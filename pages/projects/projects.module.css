@@ -8,7 +8,7 @@
   height: 100%;
   overflow-y: auto;
   /* background-color: #78c52f; */
-  background-color: var(--sea);
+  background: var(--bg);
 }
 
 .canvasContainer {
@@ -37,6 +37,7 @@
   align-items: flex-start;
   position: absolute;
   top: 80px;
+  padding-block: 3rem;
 }
 
 .cardContent {
@@ -91,6 +92,10 @@
   text-align: start;
 }
 
+.projLink.linkedIn:hover path {
+  fill: #000 !important;
+}
+
 .projLink {
   position: relative;
   width: 30px;
@@ -106,7 +111,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   transition: 0.2s;
-  background-color: var(--sea);
+  background-color: var(--bg);
 }
 
 .projLink::before {
