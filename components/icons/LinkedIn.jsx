@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types'
 
 function LinkedIn({
     fill = "white", ...rest
