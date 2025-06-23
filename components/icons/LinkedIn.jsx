@@ -1,4 +1,6 @@
-export default function LinkedIn({
+import React from 'react';
+
+function LinkedIn({
     fill = "white", ...rest
 }) {
     return (
@@ -7,3 +9,7 @@ export default function LinkedIn({
         </svg>
     );
 }
+
+LinkedIn.propTypes = { fill: string }
+
+export default LinkedIn
