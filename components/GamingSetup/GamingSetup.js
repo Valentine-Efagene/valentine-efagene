@@ -7,7 +7,7 @@ title: Gaming Desktop PC
 */
 
 import React, { useRef, useEffect } from 'react'
-import { useGLTF, TransformControls, StandardEffects } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { array, number } from 'prop-types'
 import { useFrame } from '@react-three/fiber'
 

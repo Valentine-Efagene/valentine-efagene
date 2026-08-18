@@ -6,13 +6,8 @@ source: https://sketchfab.com/models/84cf878af6524a04a0c348906c48e3aa
 title: Designer Setup
 */
 
-import React, { useRef, useEffect } from 'react'
-import {
-  useGLTF,
-  OrbitControls,
-  TransformControls,
-  StandardEffects,
-} from '@react-three/drei'
+import React, { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 import { number, array, bool } from 'prop-types'
 import { useFrame } from '@react-three/fiber'
 import { vel_scale } from '../../utils/calculations'

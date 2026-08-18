@@ -6,11 +6,9 @@ source: https://sketchfab.com/3d-models/laptop-9b45e7a38db844bd939dbc0d5ea19737
 title: Laptop
 */
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { array, bool, number } from 'prop-types'
-import { useFrame } from '@react-three/fiber'
-import { vel_scale } from '../../utils/calculations'
 
 Model.propTypes = {
   move: bool,
@@ -24,29 +22,9 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/WhiteLaptop.gltf')
 
-  let ry = 0.005
-  let vy = 0.005
-  const anim_time = {
-    x: 1000,
-    y: 3000,
-    z: 1000,
-  }
-  let vsy, rsy
-  let e_time
-
-  useFrame((state, delta) => {
-    if (!props.move) return
-
-    e_time = (Date.now() - props.time) % anim_time.y
-    vsy = vel_scale(e_time, 0, anim_time.y, 0, 2 * 3.1415)
-    group.current.position.y += vy * vsy
-  })
-
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <mesh geometry={nodes.mesh_0.geometry} material={materials.material} />
-        {/* <meshLambertMaterial attach="material" color={color} /> */}
         <mesh geometry={nodes.mesh_0.geometry} material={materials.material} />
         <mesh geometry={nodes.mesh_1.geometry} material={materials.Mat_1} />
         <mesh geometry={nodes.mesh_2.geometry} material={materials.Mat_2} />

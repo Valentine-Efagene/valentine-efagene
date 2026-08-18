@@ -8,9 +8,7 @@ title: Glowing Headphones
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
 import { array, bool, number } from 'prop-types'
-import { vel_scale } from '../../utils/calculations'
 
 Model.propTypes = {
   animate: bool,
@@ -23,21 +21,6 @@ Model.propTypes = {
 export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/GlowingHeadphones.gltf')
-  let e_time
-  const animation_time = 3000
-  const ry = 0.01
-  const vy = 0.01
-  let rsy, vsy
-
-  useFrame((state, delta) => {
-    if (!props.animate) return
-
-    e_time = (Date.now() - props.time) % animation_time
-    vsy = vel_scale(e_time, 0, animation_time, 0, 2 * 3.1415)
-    rsy = vel_scale(e_time, 0, 3000, 0, 2 * 3.1415)
-    group.current.position.y += vy * vsy
-    group.current.rotation.y += ry * rsy
-  })
 
   return (
     <group ref={group} {...props} dispose={null}>

@@ -1,15 +1,9 @@
 {
-  "extends": [
-    "plugin:cypress/recommended",
-    "plugin:react/recommended",
-    "plugin:@next/next/recommended"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2021
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/no-unknown-property": "off",
+    "@next/next/no-img-element": "off"
   }
 }

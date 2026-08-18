@@ -1,41 +1,17 @@
-import React from 'react'
-import { func, any, string } from 'prop-types'
-import styles from './NavMenuItem.module.css'
-import Tooltip from '@mui/material/Tooltip'
-import { useRouter } from 'next/router'
+import Link from 'next/link'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
 
-export default function NavMenuItem({
-  onClick,
-  onBlur,
-  children,
-  tooltipTitle,
-  href,
-}) {
-  const router = useRouter()
-  const handleClick = (e) => {
-    e.preventDefault()
-    router.push(href)
-  }
-
+export default function NavMenuItem({ children, tooltipTitle, href }) {
   return (
-    <Tooltip title={tooltipTitle} arrow>
-      <a
-        onClick={handleClick}
-        onBlur={onBlur}
-        className={`${styles.menuItem}  ${
-          router.asPath === href ? styles.activeLink : ''
-        }`}
-      >
-        {children}
-      </a>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Link href={href}>{children}</Link>
+      </TooltipTrigger>
+      {tooltipTitle ? <TooltipContent>{tooltipTitle}</TooltipContent> : null}
     </Tooltip>
   )
-}
-
-NavMenuItem.propTypes = {
-  onClick: func,
-  onBlur: func,
-  children: any,
-  tooltipTitle: string,
-  href: string,
 }

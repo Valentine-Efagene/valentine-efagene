@@ -11,8 +11,8 @@ export default function WideNavMenu({ light }) {
   return (
     <div className={`${styles.menu} ${light ? styles.light : ''}`}>
       <ActiveLink href="/">Home</ActiveLink>
-      <ActiveLink href="/projects">Projects</ActiveLink>
-      <ActiveLink href="/skills">Skills</ActiveLink>
+      <ActiveLink href="/experience">Experience</ActiveLink>
+      <ActiveLink href="/certifications">Certifications</ActiveLink>
       <ActiveLink href="/education">Education</ActiveLink>
     </div>
   )

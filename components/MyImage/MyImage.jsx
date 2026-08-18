@@ -1,36 +1,34 @@
 import Image from 'next/image'
-import { number, object, string } from 'prop-types'
-import React from 'react'
+import { bool, number, object, string } from 'prop-types'
 
 export default function MyImage({
   src,
   alt,
-  layout,
   width,
   height,
   className,
   style,
+  fill,
 }) {
   return (
-    <div className={className} style={style}>
-      <Image
-        src={src}
-        alt={alt}
-        layout={layout}
-        width={width}
-        height={height}
-      />
-      {/* <img src={src} style={{ height, width }} alt="" srcset="" /> */}
-    </div>
+    <Image
+      src={src}
+      alt={alt || ''}
+      width={fill ? undefined : width}
+      height={fill ? undefined : height}
+      fill={Boolean(fill)}
+      className={className}
+      style={style}
+    />
   )
 }
 
 MyImage.propTypes = {
   alt: string,
   src: string,
-  layout: string,
   width: number,
   height: number,
   className: string,
   style: object,
+  fill: bool,
 }
