@@ -1,11 +1,5 @@
 import PageShell from '@/components/PageShell'
 import Seo from '@/components/Seo'
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
 import { courses, education } from '@/data/content'
 
 export default function Education() {
@@ -15,34 +9,36 @@ export default function Education() {
         title="Education"
         description="Bachelor of Engineering in Computer Engineering from the Federal University of Benin."
       />
-      <section className="relative mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
+      <section className="relative mx-auto w-full max-w-4xl px-4 py-16 sm:px-6">
         <div className="mb-10 max-w-2xl space-y-3">
-          <p className="text-sm font-medium text-primary">Background</p>
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+            Background
+          </p>
           <h1 className="text-4xl font-semibold tracking-tight">Education</h1>
         </div>
 
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="text-2xl">{education.degree}</CardTitle>
-            <CardDescription className="text-base">
-              {education.field} · {education.school}, {education.location}
-            </CardDescription>
-          </CardHeader>
-        </Card>
-
-        <h2 className="mb-4 text-xl font-semibold">Selected coursework</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {courses.map((course) => (
-            <Card key={course.title}>
-              <CardHeader>
-                <CardTitle className="text-base">{course.title}</CardTitle>
-                <CardDescription className="leading-6">
-                  {course.description}
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
+        <div className="border-y border-white/[0.08] py-8">
+          <h2 className="text-base font-medium tracking-tight">
+            {education.degree}, {education.field}
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {education.school} · {education.location}
+          </p>
         </div>
+
+        <h2 className="mb-4 mt-12 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+          Selected coursework
+        </h2>
+        <ul className="divide-y divide-white/[0.08] border-y border-white/[0.08]">
+          {courses.map((course) => (
+            <li key={course.title} className="py-5">
+              <p className="text-sm font-medium tracking-tight">{course.title}</p>
+              <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                {course.description}
+              </p>
+            </li>
+          ))}
+        </ul>
       </section>
     </PageShell>
   )

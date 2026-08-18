@@ -1,25 +1,52 @@
-import { Float } from '@react-three/drei'
-import WhiteLaptop from '@/components/WhiteLaptop/WhiteLaptop'
-import GlowingHeadphones from '@/components/GlowingHeadphones/GlowingHeadphones'
-import SceneCanvas from '@/components/Scene'
+import { Suspense, useMemo } from 'react'
+import { Canvas } from '@react-three/fiber'
+import {
+  Bounds,
+  Center,
+  ContactShadows,
+  OrbitControls,
+  useGLTF,
+} from '@react-three/drei'
+
+function Headphones() {
+  const { scene } = useGLTF('/GlowingHeadphones.gltf')
+  const model = useMemo(() => scene.clone(true), [scene])
+  return <primitive object={model} />
+}
+
+useGLTF.preload('/GlowingHeadphones.gltf')
 
 export default function HeroScene() {
   return (
-    <SceneCanvas className="h-full w-full">
-      <Float speed={1.4} rotationIntensity={0.15} floatIntensity={0.45}>
-        <WhiteLaptop
-          scale={0.055}
-          rotation={[0.28, -1.15, 0.05]}
-          position={[-0.35, -0.15, 0]}
+    <Canvas
+      className="h-full w-full"
+      dpr={[1, 1.5]}
+      gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+      camera={{ position: [2.2, 1.4, 4.8], fov: 32 }}
+    >
+      <ambientLight intensity={0.7} />
+      <directionalLight position={[4, 5, 3]} intensity={1.25} />
+      <directionalLight position={[-3, 2, -2]} intensity={0.35} />
+      <Suspense fallback={null}>
+        <Bounds fit clip={false} observe margin={1.25}>
+          <Center>
+            <Headphones />
+          </Center>
+        </Bounds>
+        <ContactShadows
+          position={[0, -1.15, 0]}
+          opacity={0.4}
+          scale={10}
+          blur={2.4}
+          far={4}
         />
-      </Float>
-      <Float speed={1.8} rotationIntensity={0.35} floatIntensity={0.7}>
-        <GlowingHeadphones
-          scale={0.55}
-          rotation={[0.15, 0.9, 0.1]}
-          position={[1.55, 0.55, 0.35]}
-        />
-      </Float>
-    </SceneCanvas>
+      </Suspense>
+      <OrbitControls
+        enableZoom={false}
+        enablePan={false}
+        minPolarAngle={Math.PI / 2.8}
+        maxPolarAngle={Math.PI / 1.7}
+      />
+    </Canvas>
   )
 }

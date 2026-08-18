@@ -1,52 +1,52 @@
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import { ArrowRight, MapPin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import PageShell from '@/components/PageShell'
 import Seo from '@/components/Seo'
 import SocialLinks from '@/components/SocialLinks'
 import ExperienceTimeline from '@/components/ExperienceTimeline'
 import CertificationsGrid from '@/components/CertificationsGrid'
-import HeroScene from '@/components/HeroScene'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import { Button } from '@/components/ui/button'
 import { profile } from '@/data/content'
+
+const HeroScene = dynamic(() => import('@/components/HeroScene'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
     <PageShell>
       <Seo />
-      <section className="relative overflow-hidden">
-        <div className="mx-auto grid min-h-[calc(100vh-4rem)] w-full max-w-6xl items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(280px,42%)]">
-          <div className="max-w-xl space-y-6">
-            <p className="text-sm font-medium text-primary">
-              {profile.title} · {profile.location}
+      <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden">
+        <HeroBackdrop />
+
+        <div className="relative z-10 mx-auto grid min-h-[calc(100vh-4rem)] w-full max-w-6xl items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+          <div className="max-w-xl space-y-7">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              {profile.title}
             </p>
-            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
               {profile.name}
             </h1>
-            <p className="text-base leading-7 text-muted-foreground sm:text-lg">
+            <p className="max-w-md text-base leading-7 text-muted-foreground">
               {profile.summary}
             </p>
             <div className="flex flex-wrap items-center gap-3">
-              <Button asChild size="lg">
+              <Button asChild>
                 <a href="#experience">
-                  Job history
+                  Experience
                   <ArrowRight />
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline">
                 <Link href="/certifications">Certifications</Link>
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-4 pt-2">
-              <SocialLinks />
-              <p className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                {profile.location}
-              </p>
-            </div>
+            <SocialLinks />
           </div>
 
-          <div className="relative hidden h-[28rem] lg:block">
-            <div className="absolute inset-0 rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent" />
+          <div className="relative hidden h-[28rem] w-full lg:block lg:h-[36rem]">
             <HeroScene />
           </div>
         </div>
@@ -54,14 +54,14 @@ export default function Home() {
 
       <section
         id="experience"
-        className="relative mx-auto w-full max-w-4xl px-4 py-20 sm:px-6"
+        className="relative mx-auto w-full max-w-4xl px-4 py-24 sm:px-6"
       >
         <ExperienceTimeline showHeading />
       </section>
 
       <section
         id="certifications"
-        className="relative mx-auto w-full max-w-6xl px-4 pb-20 sm:px-6"
+        className="relative mx-auto w-full max-w-4xl px-4 pb-24 sm:px-6"
       >
         <CertificationsGrid showHeading />
       </section>

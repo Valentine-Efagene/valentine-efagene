@@ -9,9 +9,11 @@ export default function Certifications() {
         title="Certifications"
         description="AWS Certified Solutions Architect, Cloud Practitioner, and Cloud Architecting credentials."
       />
-      <section className="relative mx-auto w-full max-w-6xl px-4 py-16 sm:px-6">
+      <section className="relative mx-auto w-full max-w-4xl px-4 py-16 sm:px-6">
         <div className="mb-10 max-w-2xl space-y-3">
-          <p className="text-sm font-medium text-primary">Credentials</p>
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
+            Credentials
+          </p>
           <h1 className="text-4xl font-semibold tracking-tight">
             Certifications
           </h1>

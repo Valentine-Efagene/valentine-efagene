@@ -18,32 +18,31 @@ export default function SceneCanvas({ children, className }: SceneCanvasProps) {
       <Canvas
         dpr={[1, 1.5]}
         gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
-        camera={{ position: [0, 0.6, 7], fov: 32 }}
+        camera={{ position: [0, 0.45, 6.4], fov: 30 }}
       >
-        <ambientLight intensity={0.35} />
+        <ambientLight intensity={0.28} />
         <spotLight
-          position={[6, 10, 4]}
-          angle={0.4}
+          position={[5, 9, 5]}
+          angle={0.35}
           penumbra={1}
-          intensity={1.1}
+          intensity={0.9}
         />
-        <directionalLight position={[-4, 6, 2]} intensity={0.45} />
-        <Environment preset="city" />
+        <directionalLight position={[-3, 4, 2]} intensity={0.35} />
+        <Environment preset="studio" />
         <Suspense fallback={null}>{children}</Suspense>
         <ContactShadows
-          position={[0, -1.35, 0]}
-          opacity={0.45}
-          scale={12}
-          blur={2.4}
-          far={4}
+          position={[0, -1.2, 0]}
+          opacity={0.32}
+          scale={10}
+          blur={2.8}
+          far={3.5}
         />
         <OrbitControls
           enableZoom={false}
           enablePan={false}
-          autoRotate
-          autoRotateSpeed={0.45}
-          minPolarAngle={Math.PI / 3}
-          maxPolarAngle={Math.PI / 1.7}
+          autoRotate={false}
+          minPolarAngle={Math.PI / 2.5}
+          maxPolarAngle={Math.PI / 1.75}
         />
       </Canvas>
     </div>

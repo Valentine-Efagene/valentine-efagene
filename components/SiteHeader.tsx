@@ -18,34 +18,38 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="text-sm font-semibold tracking-tight">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.08] bg-background/75 backdrop-blur-xl">
+      <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
+        <Link
+          href="/"
+          className="text-[0.8rem] font-medium tracking-tight text-foreground"
+        >
           {profile.name}
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => {
             const active = router.pathname === link.href
             return (
-              <Button
+              <Link
                 key={link.href}
-                asChild
-                variant={active ? 'secondary' : 'ghost'}
-                size="sm"
+                href={link.href}
                 className={cn(
-                  active && 'bg-white text-zinc-950 hover:bg-white/90'
+                  'text-[0.8rem] transition-colors',
+                  active
+                    ? 'text-foreground'
+                    : 'text-muted-foreground hover:text-foreground'
                 )}
               >
-                <Link href={link.href}>{link.label}</Link>
-              </Button>
+                {link.label}
+              </Link>
             )
           })}
         </nav>
 
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden">
+            <Button variant="ghost" size="icon" className="md:hidden">
               <Menu />
               <span className="sr-only">Open menu</span>
             </Button>
@@ -54,12 +58,12 @@ export default function SiteHeader() {
             <SheetHeader>
               <SheetTitle>{profile.name}</SheetTitle>
             </SheetHeader>
-            <nav className="mt-8 flex flex-col gap-2">
+            <nav className="mt-8 flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Button
                   key={link.href}
                   asChild
-                  variant={router.pathname === link.href ? 'secondary' : 'ghost'}
+                  variant="ghost"
                   className="justify-start"
                 >
                   <Link href={link.href} onClick={() => setOpen(false)}>
